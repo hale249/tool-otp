@@ -1,0 +1,1887 @@
+<html lang="zh-CN">
+<head>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0,minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="canonical" href="https://console.byteplus.com/auth/signup/">
+    <link rel="canonical" href="https://console.byteplus.com/auth/login/">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <link rel="shortcut icon" href="//assets.byteplus.com/obj/byteplus-assets/icons/byteplus-favicon.png" sizes="16x16"
+          crossorigin="anonymous">
+    <title>BytePlus Console</title>
+    <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script>
+    <script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-WTMWF5D"></script>
+    <script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-5MSRBFX"></script>
+    <script>window.vconsoleAppInfo = {
+        "name": "auth",
+        "path": "\u002Fauth",
+        "scmVersion": "1.0.0.506",
+        "versionId": "12432",
+        "publishTime": "1747933758",
+        "publishType": 0,
+        "publishTarget": "",
+        "pageType": 3,
+        "documentLibId": 0,
+        "modules": [],
+        "slardarBid": "",
+        "serviceCode": "",
+        "navbar": {
+            "scmVersion": "1.0.0.493",
+            "versionId": "12311",
+            "publishTime": "1747665921",
+            "publishType": 0,
+            "publishTarget": "",
+            "isHidden": false
+        }
+    };</script>
+    <script>
+        window.__CURRENT_USER = {"Type": "Account", "Account": {"Id": 0}};
+        window.__ENV = {
+            "isDev": false,
+            "isBoe": false,
+            "isBytePlus": true,
+            "isVolcEngine": false,
+            "isStable": false,
+            "volcFrame": "",
+            "isProd": true,
+            "isPPE": false,
+            "isExternal": true,
+            "isUnicom": false,
+            "isPartner": false,
+            "isEmbedded": false,
+            "isPublicEmbedded": false,
+            "isFinanceCloud": false,
+            "isSelfDrive": false
+        };
+        window.__REQUEST_METADATA = {
+            "webId": "f766ffb2-e583-4c2c-8623-63bc6cf4d1e9",
+            "logId": "202505230222202981956BE950A30FBF1D"
+        };
+    </script>
+    <link href="//lf16-static.bytepluscdn.com/obj/byteplus-sg/theme_css/static/css/async/theme.58d3557d.css"
+          rel="stylesheet" crossorigin="anonymous">
+    <link href="//sf16-resources.bytepluscdn.com/obj/unpkg-va/platform-fe/byteplus-cookie-banner/0.0.5/dist/init-cookie.css"
+          rel="stylesheet" type="text/css" crossorigin="anonymous">
+    <script crossorigin="anonymous"
+            src="//sf16-resources.bytepluscdn.com/obj/byteplus-public-aiso/byteplus-vendors/cookieBanner.a8c234e6.js"></script>
+    <script crossorigin="anonymous"
+            src="//sf16-resources.bytepluscdn.com/obj/byteplus-public-aiso/byteplus-vendors/tea.355401c8.js"></script>
+    <script crossorigin="anonymous"
+            src="//sf16-resources.bytepluscdn.com/obj/byteplus-public-aiso/byteplus-vendors/slardar.d3a5f801.js"></script>
+    <script src="https://sf16-short-sg.bytedapm.com/slardar/fe/sdk-web/browser.1.5.4.sg.js?bid=byteplus_console&amp;globalName=Volc_Slardar"></script>
+    <link href="//sf-static-resources.bytepluscdn.com/obj/byteplus-public-aiso/byteplus_console_navbar/static/css/navbar.1e7a7d48.css"
+          rel="stylesheet" crossorigin="anonymous">
+    <script type="text/javascript"
+            src="https://lf-c-flwb.ibytedtos.com/obj/rc-client-security-sg/web/stable/1.0.1.10/bdms.js"></script>
+    <link href="//sf-static-resources.bytepluscdn.com/obj/byteplus-public-aiso/vconsole-auth/byteplus/static/js/1.0.0.506/builder-runtime.120ccc92.js"
+          as="script" rel="preload" crossorigin="anonymous">
+    <link href="//sf-static-resources.bytepluscdn.com/obj/byteplus-public-aiso/vconsole-auth/byteplus/static/js/1.0.0.506/9515.d995846e.js"
+          as="script" rel="preload" crossorigin="anonymous">
+    <link href="//sf-static-resources.bytepluscdn.com/obj/byteplus-public-aiso/vconsole-auth/byteplus/static/js/1.0.0.506/main.84f9f08a.js"
+          as="script" rel="preload" crossorigin="anonymous">
+    <link href="//sf-static-resources.bytepluscdn.com/obj/byteplus-public-aiso/vconsole-auth/byteplus/static/css/1.0.0.506/main.ce302777.css"
+          rel="stylesheet" crossorigin="anonymous">
+    <style>.volc-information-copy {
+        color: #1759dd;
+        cursor: pointer;
+        font-weight: 500;
+        white-space: nowrap;
+    }
+
+    .volc-information-copy.volc-copied-succeed {
+        color: var(--color-text-2, #42464e);
+    }
+
+    .volc-information-copy .volc-copy-hidden {
+        display: none;
+    }
+
+    .volc-information-copy .volc-information-copy-copy:hover {
+        color: var(--primary-color, #1664ff);
+    }
+
+    .volc-information-copy svg {
+        font-size: 14px;
+    }
+
+    .volc-info-transition {
+        display: none;
+        overflow: hidden;
+        position: relative;
+        transition: height 0.2s cubic-bezier(0.34, 0.69, 0.1, 1);
+    }
+
+    .volc-info-transition-expanded {
+        display: block;
+        height: auto;
+    }
+    </style>
+    <style>.volc_notification {
+        position: relative;
+        white-space: pre-line;
+    }
+
+    .volc_notification .linkColor {
+        color: #1759dd;
+    }
+
+    .volc_notification .linkColor:hover {
+        color: var(--primary-color, #1664ff);
+    }
+
+    .volc_notification .bp-nav-notification {
+        width: 360px;
+        padding: 16px 20px 0 20px;
+        background: rgba(246, 248, 250, 0.9);
+    }
+
+    .volc_notification .bp-nav-notification .bp-nav-notification-left .bp-nav-notification-icon {
+        margin-top: 0px;
+    }
+
+    .volc_notification .bp-nav-notification .bp-nav-notification-title {
+        font-size: var(--info-notification-tilte-font, 14px);
+        line-height: var(--info-notification-tilte-line-height);
+    }
+
+    .volc_notification .bp-nav-notification .bp-nav-notification-content {
+        font-size: var(--info-notification-content-font, 13px);
+        line-height: var(--info-notification-content-line-height);
+    }
+
+    .volc_notification .bp-nav-notification .bp-nav-notification-content .volc-information-copy {
+        font-size: var(--info-notification-copy-font);
+        line-height: var(--info-notification-copy-line-height);
+    }
+
+    .volc_notification .bp-nav-notification .bp-nav-notification-close-btn {
+        line-height: 1;
+    }
+
+    .volc_notification .bp-nav-notification .bp-nav-pagination.bp-nav-pagination-size-small .bp-nav-pagination-jumper,
+    .volc_notification .bp-nav-notification .bp-nav-pagination .bp-nav-pagination-jumper .bp-nav-pagination-jumper-input {
+        background-color: transparent;
+    }
+
+    .volc_notification .bp-nav-notification .volc-notification-docLink {
+        color: #1759dd;
+    }
+
+    .volc_notification .bp-nav-notification .volc-notification-docLink:hover {
+        color: var(--primary-color, #1664ff);
+    }
+
+    .volc_notification .bp-nav-notification .volc-noti-single {
+        padding-bottom: 16px;
+    }
+
+    .volc_notification .bp-nav-notification .volc-noti-single .volc-notification-detail {
+        margin-top: 4px;
+    }
+
+    .volc_notification .bp-nav-notification .volc-noti-single .volc-notification-detail .volc-notification-detail-title {
+        position: relative;
+        cursor: pointer;
+    }
+
+    .volc_notification .bp-nav-notification .volc-noti-single .volc-notification-detail .volc-notification-detail-title .volc-notification-detail-text {
+        margin-right: 6px;
+        transition: opacity 0.2s cubic-bezier(0.34, 0.69, 0.1, 1);
+        color: #1759dd;
+    }
+
+    .volc_notification .bp-nav-notification .volc-noti-single .volc-notification-detail .volc-notification-detail-title .volc-notification-detail-text:hover {
+        color: var(--primary-color, #1664ff);
+    }
+
+    .volc_notification .bp-nav-notification .volc-noti-single .volc-notification-detail .volc-notification-detail-title .volc-notification-detail-text-displaynone {
+        opacity: 0;
+    }
+
+    .volc_notification .bp-nav-notification .volc-noti-single .volc-notification-detail .volc-notification-detail-title .volc-notification-detail-text-close {
+        position: absolute;
+        left: 0;
+        color: var(--primary-color);
+        transition: opacity 0.2s cubic-bezier(0.34, 0.69, 0.1, 1);
+    }
+
+    .volc_notification .bp-nav-notification .volc-noti-single .volc-notification-detail .volc-notification-icon-down {
+        transition: transform 0.2s cubic-bezier(0.34, 0.69, 0.1, 1);
+    }
+
+    .volc_notification .bp-nav-notification .volc-noti-single .volc-notification-detail .volc-notification-detail-title-expanded .volc-notification-icon-down {
+        transform: rotate(-180deg);
+    }
+
+    .volc_notification .bp-nav-notification .volc-noti-single .volc-notification-detail .volc-notification-detail-content {
+        font-size: 12px;
+        line-height: 20px;
+        color: #4e5969;
+        padding-top: 6px;
+    }
+
+    .volc_notification .bp-nav-notification .volc-noti-single .volc-notification-detail .volc-notification-detail-content .volc-notification-detail-content-text {
+        transition: opacity 0.2s cubic-bezier(0.34, 0.69, 0.1, 1);
+        word-break: break-all;
+    }
+
+    .volc_notification .bp-nav-notification .volc-noti-single .volc-notification-detail .volc-notification-detail-content .volc-notification-detail-content-text .volc-notification-detail-key {
+        color: #80838a;
+    }
+
+    .volc_notification .bp-nav-notification .volc-noti-single .volc-notification-detail .volc-notification-detail-content .volc-notification-detail-content-text .volc-notification-detail-value {
+        color: #42464e;
+    }
+
+    .volc_notification .bp-nav-notification .volc-noti-single .volc-notification-detail .volc-notification-detail-content .volc-notification-copyButton {
+        margin-left: 2px;
+        display: inline-block;
+    }
+
+    .volc_notification .bp-nav-notification .volc-noti-multiple {
+        padding-bottom: 16px;
+    }
+
+    .volc_notification .bp-nav-notification .volc-noti-multiple .srcoll-bar {
+        scrollbar-width: thin;
+        scrollbar-color: #dde2e9 transparent;
+    }
+
+    .volc_notification .bp-nav-notification .volc-noti-multiple .srcoll-bar::-webkit-scrollbar-thumb {
+        background-color: #dde2e9;
+        border: 4px solid transparent;
+        background-clip: padding-box;
+        border-radius: 7px;
+    }
+
+    .volc_notification .bp-nav-notification .volc-noti-multiple .srcoll-bar::-webkit-scrollbar {
+        width: 12px;
+        height: 4px;
+        background-color: transparent;
+    }
+
+    .volc_notification .bp-nav-notification .volc-noti-multiple .srcoll-bar::-webkit-scrollbar-track {
+        background-color: transparent;
+    }
+
+    .volc_notification .bp-nav-notification .volc-noti-multiple .srcoll-bar::-webkit-scrollbar-corner {
+        background-color: transparent;
+    }
+
+    .volc_notification .bp-nav-notification .volc-noti-multiple .srcoll-bar::-webkit-scrollbar-track-piece {
+        background-color: transparent;
+    }
+
+    .volc_notification .bp-nav-notification .volc-noti-multiple .volc-noti-multiple-pages {
+        height: calc(100% - 28px);
+        overflow-y: auto;
+        scrollbar-width: thin;
+        scrollbar-color: #dde2e9 transparent;
+    }
+
+    .volc_notification .bp-nav-notification .volc-noti-multiple .volc-noti-multiple-pages::-webkit-scrollbar-thumb {
+        background-color: #dde2e9;
+        border: 4px solid transparent;
+        background-clip: padding-box;
+        border-radius: 7px;
+    }
+
+    .volc_notification .bp-nav-notification .volc-noti-multiple .volc-noti-multiple-pages::-webkit-scrollbar {
+        width: 12px;
+        height: 4px;
+        background-color: transparent;
+    }
+
+    .volc_notification .bp-nav-notification .volc-noti-multiple .volc-noti-multiple-pages::-webkit-scrollbar-track {
+        background-color: transparent;
+    }
+
+    .volc_notification .bp-nav-notification .volc-noti-multiple .volc-noti-multiple-pages::-webkit-scrollbar-corner {
+        background-color: transparent;
+    }
+
+    .volc_notification .bp-nav-notification .volc-noti-multiple .volc-noti-multiple-pages::-webkit-scrollbar-track-piece {
+        background-color: transparent;
+    }
+
+    .volc_notification .bp-nav-notification .volc-noti-multiple .volc-noti-multiple-pages.with-no-footer {
+        height: calc(100% - 8px);
+    }
+
+    .volc_notification .bp-nav-notification .volc-noti-multiple .volc-noti-multiple-pages .volc-noti-multiple-page {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .volc_notification .bp-nav-notification .volc-noti-multiple .volc-noti-multiple-pages .volc-notification-multi-info-detial {
+        flex: 1;
+        padding: 8px 8px 4px 8px;
+        margin-top: 8px;
+        border-radius: var(--radio-default, 4px);
+        border: 0.5px solid var(--color-border-3, #dde2e9);
+        background: rgba(241, 243, 245, 0.5);
+    }
+
+    .volc_notification .bp-nav-notification .volc-noti-multiple .volc-noti-multiple-pages .volc-notification-multi-info-detial .volc-notification-detail-content-text {
+        word-break: break-all;
+        margin-bottom: var(--info-notification-detail-margin-button, 4px);
+        font-size: var(--info-notification-detail-font, 12px);
+        line-height: var(--info-notification-detail-line-height, 20px);
+    }
+
+    .volc_notification .bp-nav-notification .volc-noti-multiple .volc-noti-multiple-pages .volc-notification-multi-info-detial .volc-notification-detail-content-text .volc-notification-detail-key {
+        color: #80838a;
+    }
+
+    .volc_notification .bp-nav-notification .volc-noti-multiple .volc-noti-multiple-pages .volc-notification-multi-info-detial .volc-notification-detail-content-text .volc-notification-detail-value {
+        color: #42464e;
+    }
+
+    .volc_notification .bp-nav-notification .volc-noti-multiple .volc-noti-multiple-footer {
+        height: 0px;
+        position: absolute;
+        bottom: 16px;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .volc_notification .bp-nav-notification .volc-noti-multiple .volc-noti-multiple-footer.hasContent {
+        height: 20px;
+    }
+
+    .volc_notification .bp-nav-notification .volc-noti-multiple .volc-noti-multiple-footer-mist {
+        position: absolute;
+        bottom: 0px;
+        left: 126px;
+        opacity: 0;
+        transition: opacity 0.2s cubic-bezier(0.34, 0.69, 0.1, 1);
+    }
+
+    .volc_notification .bp-nav-notification:hover .volc-noti-multiple-footer-mist {
+        opacity: 1;
+    }
+
+    .volc_notification {
+        --info-notification-tilte-font: 14px;
+        --info-notification-tilte-line-height: 22px;
+        --info-notification-content-font: 13px;
+        --info-notification-content-line-height: 22px;
+        --info-notification-detail-font: 12px;
+        --info-notification-detail-line-height: 20px;
+        --info-notification-copy-font: 12px;
+        --info-notification-copy-line-height: 20px;
+        --info-notification-detail-margin-button: 4px;
+    }
+
+    .volc_notification.byteplus_notification {
+        --info-notification-tilte-font: 18px;
+        --info-notification-tilte-line-height: 24px;
+        --info-notification-content-font: 14px;
+        --info-notification-content-line-height: 20px;
+        --info-notification-detail-font: 12px;
+        --info-notification-detail-line-height: 16px;
+        --info-notification-copy-font: 12px;
+        --info-notification-copy-line-height: 16px;
+        --info-notification-detail-margin-button: 8px;
+    }
+
+    .volc_notification.byteplus_notification .bp-nav-notification-left {
+        margin-top: 0;
+    }
+
+    .volc_notification.byteplus_notification .bp-nav-notification-icon {
+        font-size: 24px;
+    }
+    </style>
+    <style>.volc_message {
+        position: relative;
+        white-space: pre-line;
+    }
+    </style>
+    <style>.volc-accessdenied {
+        width: 520px;
+        font-family: PingFang SC;
+    }
+
+    .volc-accessdenied .volc-accessdenied-header {
+        display: flex;
+        justify-content: space-between;
+        color: var(--color-text-1, #0c0d0e);
+        line-height: 22px;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 400;
+        letter-spacing: 0.039px;
+    }
+
+    .volc-accessdenied .volc-accessdenied-header .volc-accessdenied-copyButton {
+        display: inline-block;
+        height: 20px;
+        padding: 0 4px;
+        font-size: 12px;
+    }
+
+    .volc-accessdenied .volc-accessdenied-header .volc-accessdenied-copyButton span {
+        margin-left: 2px;
+    }
+
+    .volc-accessdenied .volc-accessdenied-header .volc-accessdenied-copyButton svg {
+        vertical-align: -3px;
+        font-size: 14px;
+    }
+
+    .volc-accessdenied .volc-accessdenied-content {
+        background: #fafbfc;
+        border: 0.5px solid #dde2e9;
+        border-radius: 4px;
+        padding: 12px;
+        margin: 8px 0 12px;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px;
+        /* 166.667% */
+        letter-spacing: 0.036px;
+    }
+
+    .volc-accessdenied .volc-accessdenied-content .volc-accessdenied-content-page {
+        display: none;
+    }
+
+    .volc-accessdenied .volc-accessdenied-content .volc-accessdenied-content-page .volc-details-upper {
+        color: #42464e;
+    }
+
+    .volc-accessdenied .volc-accessdenied-content .volc-accessdenied-content-page .volc-details-upper .volc-details-upper-item {
+        margin-bottom: 8px;
+        display: flex;
+    }
+
+    .volc-accessdenied .volc-accessdenied-content .volc-accessdenied-content-page .volc-details-upper .volc-details-upper-item .volc-details-upper-key {
+        font-weight: 500;
+        flex-shrink: 0;
+    }
+
+    .volc-accessdenied .volc-accessdenied-content .volc-accessdenied-content-page .volc-details-upper .volc-details-upper-item .volc-details-upper-value {
+        font-weight: 400;
+    }
+
+    .volc-accessdenied .volc-accessdenied-content .volc-accessdenied-content-page .volc-access-detail {
+        margin-top: 4px;
+    }
+
+    .volc-accessdenied .volc-accessdenied-content .volc-accessdenied-content-page .volc-access-detail .volc-detail-title {
+        position: relative;
+        cursor: pointer;
+    }
+
+    .volc-accessdenied .volc-accessdenied-content .volc-accessdenied-content-page .volc-access-detail .volc-detail-title .volc-detail-text {
+        margin-right: 4px;
+        transition: opacity 0.2s cubic-bezier(0.34, 0.69, 0.1, 1);
+        color: #1759dd;
+    }
+
+    .volc-accessdenied .volc-accessdenied-content .volc-accessdenied-content-page .volc-access-detail .volc-detail-title .volc-detail-text:hover {
+        color: var(--primary-color, #1664ff);
+    }
+
+    .volc-accessdenied .volc-accessdenied-content .volc-accessdenied-content-page .volc-access-detail .volc-detail-icon-down {
+        transition: transform 0.2s cubic-bezier(0.34, 0.69, 0.1, 1);
+        vertical-align: -2px;
+        transform: rotate(180deg);
+        fill: var(--color-fill-2, #80838a);
+    }
+
+    .volc-accessdenied .volc-accessdenied-content .volc-accessdenied-content-page .volc-access-detail .volc-detail-title-expanded .volc-detail-icon-down {
+        transform: rotate(0);
+    }
+
+    .volc-accessdenied .volc-accessdenied-content .volc-accessdenied-content-page .volc-access-detail .volc-detail-content {
+        height: auto;
+        font-size: 12px;
+        line-height: 20px;
+        color: #4e5969;
+    }
+
+    .volc-accessdenied .volc-accessdenied-content .volc-accessdenied-content-page .volc-access-detail .volc-detail-content .volc-detail-content-text {
+        transition: opacity 0.2s cubic-bezier(0.34, 0.69, 0.1, 1);
+        padding-top: 4px;
+        word-break: break-all;
+    }
+
+    .volc-accessdenied .volc-accessdenied-content .volc-accessdenied-content-page .volc-access-detail .volc-detail-content .volc-detail-content-text .volc-detail-key {
+        color: #80838a;
+    }
+
+    .volc-accessdenied .volc-accessdenied-content .volc-accessdenied-content-page .volc-access-detail .volc-detail-content .volc-detail-content-text .volc-detail-value {
+        color: #41464f;
+    }
+
+    .volc-accessdenied .volc-accessdenied-content .volc-accessdenied-content-page.active {
+        display: block;
+    }
+
+    .volc-accessdenied .volc-accessdenied-footer {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .volc-accessdenied .volc-accessdenied-footer .volc-accessdenied-footer-link {
+        color: #42464e;
+        font-size: 13px;
+    }
+
+    .volc-accessdenied .volc-accessdenied-footer .volc-accessdenied-footer-link:hover {
+        color: var(--primary-color, #1664ff);
+    }
+
+    .volc-accessdenied-mobile {
+        font-family: PingFang SC;
+    }
+
+    .volc-accessdenied-mobile .volc-accessdenied-header {
+        display: flex;
+        justify-content: space-between;
+        color: var(--color-text-1, #0c0d0e);
+        line-height: 22px;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 400;
+        letter-spacing: 0.039px;
+    }
+
+    .volc-accessdenied-mobile .volc-accessdenied-content {
+        height: 320px;
+        margin-top: 4px;
+        overflow-y: scroll;
+    }
+
+    .volc-accessdenied-mobile .volc-accessdenied-content .volc-accessdenied-content-collapse {
+        margin-top: 8px;
+        background-color: #FAFBFC;
+        border: 0.5px solid #dde2e9;
+        border-radius: 4px;
+        max-height: 46px;
+        overflow: hidden;
+        transition: max-height 0.1s ease;
+    }
+
+    .volc-accessdenied-mobile .volc-accessdenied-content .volc-accessdenied-content-collapse .volc-accessdenied-content-collapse-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 12px;
+        box-sizing: border-box;
+        font-family: PingFang SC;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 22px;
+        letter-spacing: 0.003em;
+    }
+
+    .volc-accessdenied-mobile .volc-accessdenied-content .volc-accessdenied-content-collapse .volc-accessdenied-content-collapse-header .volc-accessdenied-content-collapse-header-icon {
+        transition: transform 0.1s ease;
+    }
+
+    .volc-accessdenied-mobile .volc-accessdenied-content .volc-accessdenied-content-collapse.active {
+        max-height: 1000px;
+    }
+
+    .volc-accessdenied-mobile .volc-accessdenied-content .volc-accessdenied-content-collapse.active .volc-accessdenied-content-collapse-header .volc-accessdenied-content-collapse-header-icon {
+        transform: rotate(-180deg);
+    }
+
+    .volc-accessdenied-content-page {
+        display: block;
+        padding: 0 12px 12px 12px;
+    }
+
+    .volc-accessdenied-content-page .volc-details-upper {
+        color: #42464e;
+    }
+
+    .volc-accessdenied-content-page .volc-details-upper .volc-details-upper-item {
+        margin-bottom: 8px;
+        display: flex;
+    }
+
+    .volc-accessdenied-content-page .volc-details-upper .volc-details-upper-item .volc-details-upper-key {
+        font-weight: 500;
+        flex-shrink: 0;
+    }
+
+    .volc-accessdenied-content-page .volc-details-upper .volc-details-upper-item .volc-details-upper-value {
+        font-weight: 400;
+    }
+
+    .volc-accessdenied-content-page .volc-access-detail {
+        margin-top: 4px;
+    }
+
+    .volc-accessdenied-content-page .volc-access-detail .volc-detail-title {
+        position: relative;
+        cursor: pointer;
+    }
+
+    .volc-accessdenied-content-page .volc-access-detail .volc-detail-title .volc-detail-text {
+        margin-right: 4px;
+        transition: opacity 0.2s cubic-bezier(0.34, 0.69, 0.1, 1);
+        color: #1759dd;
+    }
+
+    .volc-accessdenied-content-page .volc-access-detail .volc-detail-title .volc-detail-text:hover {
+        color: var(--primary-color, #1664ff);
+    }
+
+    .volc-accessdenied-content-page .volc-access-detail .volc-detail-icon-down {
+        transition: transform 0.2s cubic-bezier(0.34, 0.69, 0.1, 1);
+        vertical-align: -2px;
+        transform: rotate(180deg);
+        fill: var(--color-fill-2, #80838a);
+    }
+
+    .volc-accessdenied-content-page .volc-access-detail .volc-detail-title-expanded .volc-detail-icon-down {
+        transform: rotate(0);
+    }
+
+    .volc-accessdenied-content-page .volc-access-detail .volc-detail-content {
+        height: auto;
+        font-size: 12px;
+        line-height: 20px;
+        color: #4e5969;
+    }
+
+    .volc-accessdenied-content-page .volc-access-detail .volc-detail-content .volc-detail-content-text {
+        transition: opacity 0.2s cubic-bezier(0.34, 0.69, 0.1, 1);
+        padding-top: 4px;
+        word-break: break-all;
+    }
+
+    .volc-accessdenied-content-page .volc-access-detail .volc-detail-content .volc-detail-content-text .volc-detail-key {
+        color: #80838a;
+    }
+
+    .volc-accessdenied-content-page .volc-access-detail .volc-detail-content .volc-detail-content-text .volc-detail-value {
+        color: #41464f;
+    }
+    </style>
+    <style>.volc-accese-collapse {
+        background: var(--red-danger-1, #fdf5f5);
+        padding: 8px 16px;
+    }
+
+    .volc-accese-collapse.volc-accese-collapse-hide {
+        display: none;
+    }
+
+    .volc-accese-collapse .volc-accese-collapse-header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        color: var(--color-text-1, #0c0d0e);
+        font-family: PingFang SC;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 22px;
+        /* 169.231% */
+        letter-spacing: 0.039px;
+    }
+
+    .volc-accese-collapse .volc-accese-collapse-header .volc-accese-icon-error {
+        font-size: 20px;
+        line-height: 22px;
+        vertical-align: text-bottom;
+        padding-right: 8px;
+    }
+
+    .volc-accese-collapse .volc-accese-collapse-header .volc-accese-col-highlight-text {
+        font-weight: 400;
+        color: var(--color-primary-6, #1664ff);
+        padding-left: 8px;
+        cursor: pointer;
+    }
+
+    .volc-accese-collapse .volc-accese-collapse-header .volc-accese-col-highlight-text:hover {
+        color: #387bff;
+    }
+
+    .volc-accese-collapse .volc-accessdenied {
+        width: auto;
+        padding-left: 28px;
+        margin-top: 12px;
+        margin-bottom: 8px;
+    }
+
+    .volc-accese-collapse .volc-accessdenied .volc-accessdenied-header {
+        color: var(--color-text-2, #42464e);
+    }
+
+    .volc-accese-collapse .volc-accessdenied .volc-accessdenied-content {
+        border: 1px solid #fdf2f2;
+        background: rgba(255, 255, 255, 0.8);
+    }
+
+    .volc-accese-collapse .volc-accessdenied .bp-nav-pagination-simple .bp-nav-pagination-item-prev,
+    .volc-accese-collapse .volc-accessdenied .bp-nav-pagination-simple .bp-nav-pagination-item-next {
+        background-color: var(--color-bg-white, #fff);
+    }
+
+    .volc-accese-default {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .volc-accese-default > svg {
+        width: 60px;
+        height: 60px;
+    }
+
+    @media (min-width: 1920px) {
+        .volc-accese-default > svg {
+            width: 96px;
+            height: 96px;
+        }
+    }
+
+    .volc-accese-default .volc-accese-default-icon-lock {
+        width: 60px;
+        height: 60px;
+    }
+
+    .volc-accese-default .volc-accese-default-title {
+        color: var(--color-text-1, #0c0d0e);
+        text-align: center;
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-family: PingFang SC;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 20px;
+        /* 153.846% */
+        padding: 8px 0 32px;
+    }
+    </style>
+    <style>.volc_modal {
+        position: relative;
+    }
+
+    .volc_modal .bp-nav-modal {
+        width: 600px;
+    }
+
+    .volc_modal .volc-modal-icon-error {
+        margin-right: 8px;
+    }
+
+    .volc_modal .bp-nav-modal-content {
+        margin-left: 32px;
+    }
+
+    @media screen and (max-width: 1023px) {
+        .volc_modal .bp-nav-modal {
+            width: calc(100vw - 32px) !important;
+        }
+
+        .volc_modal .bp-nav-modal-content {
+            margin-left: 0 !important;
+        }
+    }
+
+    .access-denied-mob-footer {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+    }
+
+    .access-denied-mob-footer .bp-nav-btn {
+        width: calc(50% - 6px);
+        height: 40px;
+    }
+
+    .access-denied-mob-footer .bp-nav-btn:only-child {
+        width: 100%;
+    }
+    </style>
+    <script src="https://sf16-short-sg.bytedapm.com/slardar/fe/sdk-web/plugins/common-monitors.1.5.4.js"
+            crossorigin="anonymous"></script>
+    <script src="https://sf16-short-sg.bytedapm.com/slardar/fe/sdk-web/plugins/blank-screen.1.5.4.js"
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css"
+          href="//sf-static-resources.bytepluscdn.com/obj/byteplus-public-aiso/vconsole-auth/byteplus/static/css/1.0.0.506/async/3896.d23ae034.css">
+    <link rel="stylesheet" type="text/css"
+          href="//sf-static-resources.bytepluscdn.com/obj/byteplus-public-aiso/vconsole-auth/byteplus/static/css/1.0.0.506/async/1829.2f2f8c46.css">
+    <link rel="stylesheet" type="text/css"
+          href="//sf-static-resources.bytepluscdn.com/obj/byteplus-public-aiso/vconsole-auth/byteplus/static/css/1.0.0.506/async/5966.a7fb1884.css">
+    <link rel="stylesheet" type="text/css"
+          href="//sf-static-resources.bytepluscdn.com/obj/byteplus-public-aiso/vconsole-auth/byteplus/static/css/1.0.0.506/async/2397.8df5dfa4.css">
+    <link rel="stylesheet" type="text/css"
+          href="//sf-static-resources.bytepluscdn.com/obj/byteplus-public-aiso/vconsole-auth/byteplus/static/css/1.0.0.506/async/2107.fd563cff.css">
+    <link rel="stylesheet" type="text/css"
+          href="//sf-static-resources.bytepluscdn.com/obj/byteplus-public-aiso/vconsole-auth/byteplus/static/css/1.0.0.506/async/57.215cd2b4.css">
+    <link rel="stylesheet" type="text/css"
+          href="//sf-static-resources.bytepluscdn.com/obj/byteplus-public-aiso/vconsole-auth/byteplus/static/css/1.0.0.506/async/6449.ec18cecd.css">
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('consent', 'default', {
+            "ad_storage": "denied",
+            "analytics_storage": "denied",
+            "functional_storage": "denied",
+            "personalization_storage": "denied",
+            "security_storage": "granted",
+            "ga_consent": "denied",
+            "linkedin_consent": "denied",
+            "salesforce_consent": "denied"
+        });
+
+        // gtm installation
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-5MSRBFX');
+    </script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('consent', 'default', {
+            "ad_storage": "denied",
+            "analytics_storage": "denied",
+            "functional_storage": "denied",
+            "personalization_storage": "denied",
+            "security_storage": "granted",
+            "ga_consent": "denied",
+            "linkedin_consent": "denied",
+            "salesforce_consent": "denied"
+        });
+
+        // gtm installation
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-WTMWF5D');
+    </script>
+    <style data-emotion="css" data-s=""></style>
+    <script src="https://accounts.google.com/gsi/client" defer=""></script>
+    <link id="googleidentityservice" type="text/css" media="all" href="https://accounts.google.com/gsi/style"
+          rel="stylesheet">
+    <meta http-equiv="origin-trial"
+          content="A8o5T4MyEkRZqLA9WeG2XTFdV5tsX2Prg85xyQ+RL1btVuybB1K/EQ+7JUsPK+J32oBMTnsoF9B4A+qTlL6efgQAAABweyJvcmlnaW4iOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb206NDQzIiwiZmVhdHVyZSI6IkZlZENtQnV0dG9uTW9kZSIsImV4cGlyeSI6MTc0NDY3NTIwMCwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ==">
+    <style id="googleidentityservice_button_styles">.qJTHM {
+        -webkit-user-select: none;
+        color: #202124;
+        direction: ltr;
+        -webkit-touch-callout: none;
+        font-family: "Roboto-Regular", arial, sans-serif;
+        -webkit-font-smoothing: antialiased;
+        font-weight: 400;
+        margin: 0;
+        overflow: hidden;
+        -webkit-text-size-adjust: 100%
+    }
+
+    .ynRLnc {
+        left: -9999px;
+        position: absolute;
+        top: -9999px
+    }
+
+    .L6cTce {
+        display: none
+    }
+
+    .bltWBb {
+        word-break: break-all
+    }
+
+    .hSRGPd {
+        color: #1a73e8;
+        cursor: pointer;
+        font-weight: 500;
+        text-decoration: none
+    }
+
+    .Bz112c-W3lGp {
+        height: 16px;
+        width: 16px
+    }
+
+    .Bz112c-E3DyYd {
+        height: 20px;
+        width: 20px
+    }
+
+    .Bz112c-r9oPif {
+        height: 24px;
+        width: 24px
+    }
+
+    .Bz112c-r4WDKb {
+        height: 42px;
+        width: 42px
+    }
+
+    .Bz112c-uaxL4e {
+        -webkit-border-radius: 10px;
+        border-radius: 10px
+    }
+
+    .LgbsSe-Bz112c {
+        display: block
+    }
+
+    .S9gUrf-YoZ4jf, .S9gUrf-YoZ4jf * {
+        border: none;
+        margin: 0;
+        padding: 0
+    }
+
+    .fFW7wc-ibnC6b > .aZ2wEe > div {
+        border-color: #4285f4
+    }
+
+    .P1ekSe-ZMv3u > div:nth-child(1) {
+        background-color: #1a73e8 !important
+    }
+
+    .P1ekSe-ZMv3u > div:nth-child(2), .P1ekSe-ZMv3u > div:nth-child(3) {
+        background-image: linear-gradient(to right, rgba(255, 255, 255, .7), rgba(255, 255, 255, .7)), linear-gradient(to right, #1a73e8, #1a73e8) !important
+    }
+
+    .haAclf {
+        display: inline-block
+    }
+
+    .nsm7Bb-HzV7m-LgbsSe {
+        -webkit-border-radius: 4px;
+        border-radius: 4px;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        -webkit-transition: background-color .218s, border-color .218s;
+        transition: background-color .218s, border-color .218s;
+        -webkit-user-select: none;
+        -webkit-appearance: none;
+        background-color: #fff;
+        background-image: none;
+        border: 1px solid #dadce0;
+        color: #3c4043;
+        cursor: pointer;
+        font-family: "Google Sans", arial, sans-serif;
+        font-size: 14px;
+        height: 40px;
+        letter-spacing: 0.25px;
+        outline: none;
+        overflow: hidden;
+        padding: 0 12px;
+        position: relative;
+        text-align: center;
+        vertical-align: middle;
+        white-space: nowrap;
+        width: auto
+    }
+
+    @media screen and (-ms-high-contrast: active) {
+        .nsm7Bb-HzV7m-LgbsSe {
+            border: 2px solid windowText;
+            color: windowText
+        }
+    }
+
+    .nsm7Bb-HzV7m-LgbsSe.pSzOP-SxQuSe {
+        font-size: 14px;
+        height: 32px;
+        letter-spacing: 0.25px;
+        padding: 0 10px
+    }
+
+    .nsm7Bb-HzV7m-LgbsSe.purZT-SxQuSe {
+        font-size: 11px;
+        height: 20px;
+        letter-spacing: 0.3px;
+        padding: 0 8px
+    }
+
+    .nsm7Bb-HzV7m-LgbsSe.Bz112c-LgbsSe {
+        padding: 0;
+        width: 40px
+    }
+
+    .nsm7Bb-HzV7m-LgbsSe.Bz112c-LgbsSe.pSzOP-SxQuSe {
+        width: 32px
+    }
+
+    .nsm7Bb-HzV7m-LgbsSe.Bz112c-LgbsSe.purZT-SxQuSe {
+        width: 20px
+    }
+
+    .nsm7Bb-HzV7m-LgbsSe.JGcpL-RbRzK {
+        -webkit-border-radius: 20px;
+        border-radius: 20px
+    }
+
+    .nsm7Bb-HzV7m-LgbsSe.JGcpL-RbRzK.pSzOP-SxQuSe {
+        -webkit-border-radius: 16px;
+        border-radius: 16px
+    }
+
+    .nsm7Bb-HzV7m-LgbsSe.JGcpL-RbRzK.purZT-SxQuSe {
+        -webkit-border-radius: 10px;
+        border-radius: 10px
+    }
+
+    .nsm7Bb-HzV7m-LgbsSe.MFS4be-Ia7Qfc {
+        border: none;
+        color: #fff
+    }
+
+    .nsm7Bb-HzV7m-LgbsSe.MFS4be-v3pZbf-Ia7Qfc {
+        background-color: #1a73e8
+    }
+
+    .nsm7Bb-HzV7m-LgbsSe.MFS4be-JaPV2b-Ia7Qfc {
+        background-color: #202124;
+        color: #e8eaed
+    }
+
+    .nsm7Bb-HzV7m-LgbsSe .nsm7Bb-HzV7m-LgbsSe-Bz112c {
+        height: 18px;
+        margin-right: 8px;
+        min-width: 18px;
+        width: 18px
+    }
+
+    .nsm7Bb-HzV7m-LgbsSe.pSzOP-SxQuSe .nsm7Bb-HzV7m-LgbsSe-Bz112c {
+        height: 14px;
+        min-width: 14px;
+        width: 14px
+    }
+
+    .nsm7Bb-HzV7m-LgbsSe.purZT-SxQuSe .nsm7Bb-HzV7m-LgbsSe-Bz112c {
+        height: 10px;
+        min-width: 10px;
+        width: 10px
+    }
+
+    .nsm7Bb-HzV7m-LgbsSe.jVeSEe .nsm7Bb-HzV7m-LgbsSe-Bz112c {
+        margin-left: 8px;
+        margin-right: -4px
+    }
+
+    .nsm7Bb-HzV7m-LgbsSe.Bz112c-LgbsSe .nsm7Bb-HzV7m-LgbsSe-Bz112c {
+        margin: 0;
+        padding: 10px
+    }
+
+    .nsm7Bb-HzV7m-LgbsSe.Bz112c-LgbsSe.pSzOP-SxQuSe .nsm7Bb-HzV7m-LgbsSe-Bz112c {
+        padding: 8px
+    }
+
+    .nsm7Bb-HzV7m-LgbsSe.Bz112c-LgbsSe.purZT-SxQuSe .nsm7Bb-HzV7m-LgbsSe-Bz112c {
+        padding: 4px
+    }
+
+    .nsm7Bb-HzV7m-LgbsSe .nsm7Bb-HzV7m-LgbsSe-Bz112c-haAclf {
+        -webkit-border-top-left-radius: 3px;
+        border-top-left-radius: 3px;
+        -webkit-border-bottom-left-radius: 3px;
+        border-bottom-left-radius: 3px;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: flex;
+        justify-content: center;
+        -webkit-align-items: center;
+        align-items: center;
+        background-color: #fff;
+        height: 36px;
+        margin-left: -10px;
+        margin-right: 12px;
+        min-width: 36px;
+        width: 36px
+    }
+
+    .nsm7Bb-HzV7m-LgbsSe .nsm7Bb-HzV7m-LgbsSe-Bz112c-haAclf .nsm7Bb-HzV7m-LgbsSe-Bz112c, .nsm7Bb-HzV7m-LgbsSe.Bz112c-LgbsSe .nsm7Bb-HzV7m-LgbsSe-Bz112c-haAclf .nsm7Bb-HzV7m-LgbsSe-Bz112c {
+        margin: 0;
+        padding: 0
+    }
+
+    .nsm7Bb-HzV7m-LgbsSe.pSzOP-SxQuSe .nsm7Bb-HzV7m-LgbsSe-Bz112c-haAclf {
+        height: 28px;
+        margin-left: -8px;
+        margin-right: 10px;
+        min-width: 28px;
+        width: 28px
+    }
+
+    .nsm7Bb-HzV7m-LgbsSe.purZT-SxQuSe .nsm7Bb-HzV7m-LgbsSe-Bz112c-haAclf {
+        height: 16px;
+        margin-left: -6px;
+        margin-right: 8px;
+        min-width: 16px;
+        width: 16px
+    }
+
+    .nsm7Bb-HzV7m-LgbsSe.Bz112c-LgbsSe .nsm7Bb-HzV7m-LgbsSe-Bz112c-haAclf {
+        -webkit-border-radius: 3px;
+        border-radius: 3px;
+        margin-left: 2px;
+        margin-right: 0;
+        padding: 0
+    }
+
+    .nsm7Bb-HzV7m-LgbsSe.JGcpL-RbRzK .nsm7Bb-HzV7m-LgbsSe-Bz112c-haAclf {
+        -webkit-border-radius: 18px;
+        border-radius: 18px
+    }
+
+    .nsm7Bb-HzV7m-LgbsSe.pSzOP-SxQuSe.JGcpL-RbRzK .nsm7Bb-HzV7m-LgbsSe-Bz112c-haAclf {
+        -webkit-border-radius: 14px;
+        border-radius: 14px
+    }
+
+    .nsm7Bb-HzV7m-LgbsSe.purZT-SxQuSe.JGcpL-RbRzK .nsm7Bb-HzV7m-LgbsSe-Bz112c-haAclf {
+        -webkit-border-radius: 8px;
+        border-radius: 8px
+    }
+
+    .nsm7Bb-HzV7m-LgbsSe .nsm7Bb-HzV7m-LgbsSe-bN97Pc-sM5MNb {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-align-items: center;
+        align-items: center;
+        -webkit-flex-direction: row;
+        flex-direction: row;
+        justify-content: space-between;
+        -webkit-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+        height: 100%;
+        position: relative;
+        width: 100%
+    }
+
+    .nsm7Bb-HzV7m-LgbsSe .oXtfBe-l4eHX {
+        justify-content: center
+    }
+
+    .nsm7Bb-HzV7m-LgbsSe .nsm7Bb-HzV7m-LgbsSe-BPrWId {
+        -webkit-flex-grow: 1;
+        flex-grow: 1;
+        font-family: "Google Sans", arial, sans-serif;
+        font-weight: 500;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        vertical-align: top
+    }
+
+    .nsm7Bb-HzV7m-LgbsSe.purZT-SxQuSe .nsm7Bb-HzV7m-LgbsSe-BPrWId {
+        font-weight: 300
+    }
+
+    .nsm7Bb-HzV7m-LgbsSe .oXtfBe-l4eHX .nsm7Bb-HzV7m-LgbsSe-BPrWId {
+        -webkit-flex-grow: 0;
+        flex-grow: 0
+    }
+
+    .nsm7Bb-HzV7m-LgbsSe .nsm7Bb-HzV7m-LgbsSe-MJoBVe {
+        -webkit-transition: background-color .218s;
+        transition: background-color .218s;
+        bottom: 0;
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0
+    }
+
+    .nsm7Bb-HzV7m-LgbsSe:hover, .nsm7Bb-HzV7m-LgbsSe:focus {
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        border-color: rgb(210, 227, 252);
+        outline: none
+    }
+
+    .nsm7Bb-HzV7m-LgbsSe:hover .nsm7Bb-HzV7m-LgbsSe-MJoBVe, .nsm7Bb-HzV7m-LgbsSe:focus .nsm7Bb-HzV7m-LgbsSe-MJoBVe {
+        background: rgba(66, 133, 244, .04)
+    }
+
+    .nsm7Bb-HzV7m-LgbsSe:active .nsm7Bb-HzV7m-LgbsSe-MJoBVe {
+        background: rgba(66, 133, 244, .1)
+    }
+
+    .nsm7Bb-HzV7m-LgbsSe.MFS4be-Ia7Qfc:hover .nsm7Bb-HzV7m-LgbsSe-MJoBVe, .nsm7Bb-HzV7m-LgbsSe.MFS4be-Ia7Qfc:focus .nsm7Bb-HzV7m-LgbsSe-MJoBVe {
+        background: rgba(255, 255, 255, .24)
+    }
+
+    .nsm7Bb-HzV7m-LgbsSe.MFS4be-Ia7Qfc:active .nsm7Bb-HzV7m-LgbsSe-MJoBVe {
+        background: rgba(255, 255, 255, .32)
+    }
+
+    .nsm7Bb-HzV7m-LgbsSe .n1UuX-DkfjY {
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: flex;
+        height: 20px;
+        margin-left: -4px;
+        margin-right: 8px;
+        min-width: 20px;
+        width: 20px
+    }
+
+    .nsm7Bb-HzV7m-LgbsSe.jVeSEe .nsm7Bb-HzV7m-LgbsSe-BPrWId {
+        font-family: "Roboto";
+        font-size: 12px;
+        text-align: left
+    }
+
+    .nsm7Bb-HzV7m-LgbsSe.jVeSEe .nsm7Bb-HzV7m-LgbsSe-BPrWId .ssJRIf, .nsm7Bb-HzV7m-LgbsSe.jVeSEe .nsm7Bb-HzV7m-LgbsSe-BPrWId .K4efff .fmcmS {
+        overflow: hidden;
+        text-overflow: ellipsis
+    }
+
+    .nsm7Bb-HzV7m-LgbsSe.jVeSEe .nsm7Bb-HzV7m-LgbsSe-BPrWId .K4efff {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-align-items: center;
+        align-items: center;
+        color: #5f6368;
+        fill: #5f6368;
+        font-size: 11px;
+        font-weight: 400
+    }
+
+    .nsm7Bb-HzV7m-LgbsSe.jVeSEe.MFS4be-Ia7Qfc .nsm7Bb-HzV7m-LgbsSe-BPrWId .K4efff {
+        color: #e8eaed;
+        fill: #e8eaed
+    }
+
+    .nsm7Bb-HzV7m-LgbsSe.jVeSEe .nsm7Bb-HzV7m-LgbsSe-BPrWId .K4efff .Bz112c {
+        height: 18px;
+        margin: -3px -3px -3px 2px;
+        min-width: 18px;
+        width: 18px
+    }
+
+    .nsm7Bb-HzV7m-LgbsSe.jVeSEe .nsm7Bb-HzV7m-LgbsSe-Bz112c-haAclf {
+        -webkit-border-top-left-radius: 0;
+        border-top-left-radius: 0;
+        -webkit-border-bottom-left-radius: 0;
+        border-bottom-left-radius: 0;
+        -webkit-border-top-right-radius: 3px;
+        border-top-right-radius: 3px;
+        -webkit-border-bottom-right-radius: 3px;
+        border-bottom-right-radius: 3px;
+        margin-left: 12px;
+        margin-right: -10px
+    }
+
+    .nsm7Bb-HzV7m-LgbsSe.jVeSEe.JGcpL-RbRzK .nsm7Bb-HzV7m-LgbsSe-Bz112c-haAclf {
+        -webkit-border-radius: 18px;
+        border-radius: 18px
+    }
+
+    .L5Fo6c-sM5MNb {
+        border: 0;
+        display: block;
+        left: 0;
+        position: relative;
+        top: 0
+    }
+
+    .L5Fo6c-bF1uUb {
+        -webkit-border-radius: 4px;
+        border-radius: 4px;
+        bottom: 0;
+        cursor: pointer;
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0
+    }
+
+    .L5Fo6c-bF1uUb:focus {
+        border: none;
+        outline: none
+    }
+
+    sentinel {
+    }</style>
+</head>
+<body><textarea class="publicData" style="display:none;">{"homeDomain":"https:\u002F\u002Fwww.byteplus.com\u002F","consoleDomain":"https:\u002F\u002Fconsole.byteplus.com","secureDomains":[".byteplus.com","y-byteplus-console.byteintl.net","b-byteplus.byteintl.net"],"INIT_CONFIG":{"cloud_verify_url":"boe-verify.snssdk.com","isProd":true,"loginPath":"\u002Fauth\u002Flogin\u002F","identityPolicy":null,"consoleConfig":{"id":41900000001,"Name":"BytePlus","Logo":"\u002F\u002Ftosv.boe.byted.org\u002Fobj\u002Fies-fe-bee-test\u002Fbee_test\u002Fbiz_97\u002Ftos_c439f60211c1db6e7c599dda9dfb8d44.svg","LogoLight":"\u002F\u002Ftosv.boe.byted.org\u002Fobj\u002Fies-fe-bee-test\u002Fbee_test\u002Fbiz_97\u002Ftos_35e4a223bf71dd2162aeef033cd88ad6.svg","EmailSubscriptionSubTypes":[47,48,49,50,51],"Terms":{"Customer Agreement":"en\u002Fdocs\u002F6396\u002F67416","Terms of Service":"en\u002Fdocs\u002F6396\u002F67407","Privacy Policy":"en\u002Fdocs\u002F6396\u002F67408"},"TermsUrlMap":{"CUSTOMER_AGREEMENT":"https:\u002F\u002Fdocs.byteplus.com\u002Flegal\u002Fdocs\u002Fcustomer-agreement","TERMS_OF_SERVICE":"https:\u002F\u002Fdocs.byteplus.com\u002Flegal\u002Fdocs\u002Fterms-of-service","PRIVACY_POLICY":"https:\u002F\u002Fdocs.byteplus.com\u002Flegal\u002Fdocs\u002Fprivacy-policy"},"errorMap":{"CaptchaError":"Invalid verification code","验证码错误":"Invalid Verification Code","身份验证已失效":"Expired Verification Code","ErrorInvalidIdentityOrPassword":"username\u002Femail or password is incorrect","AccountNotExist":"Account does not exist"},"TermsNameMap":{"Privacy":"隐私权政策","Service":"服务条款"},"modulePassList":["auth","iam","overview","user","ticket","navbar","ai","finance","showtest","meet","vod","ecs","imagex","edit","rtc","beian"],"LogoNoText":"\u002F\u002Ftosv.boe.byted.org\u002Fobj\u002Fies-fe-bee-test\u002Fbee_test\u002Fbiz_97\u002Ftos_3f6d66bfda5e8c8e93d9112a3788ff12.png","Favicon":"\u002F\u002Fs3.pstatp.com\u002Ftoutiao\u002Fvideoarch-fe\u002Fstatic\u002Fmedia\u002Ffavicon.52bcaa41.png","coldStartDocHistory":"204,220","coldStartAppHistory":"","enable_sts":"1","web_sts_service":["tos","iam","vod"],"jwk_url":"\u002Fapi\u002Fcommon\u002Fpassport\u002FencCerts","OCConsoleDomain":"https:\u002F\u002Fu-vconsole.bytedance.net","VEConsoleDomain":"https:\u002F\u002Fconsole.byteplus.com","VEHomeDomain":"https:\u002F\u002Fb-byteplus.bytedance.net\u002F","OCHomeDomain":"https:\u002F\u002Fu-vcloud.bytedance.net","InnerConsoleDomain":"https:\u002F\u002Fb-vconsole.bytedance.net","InnerHomeDomain":"https:\u002F\u002Fb-vcloud.bytedance.net","forceAuthConfigs":[],"Categories":[{"Name":"Personalization","Code":"Personaliza","Icon":"https:\u002F\u002Feps-common-public-boe.tos-ap-southeast-1.bytepluses.com\u002Feps-cms\u002Fboe\u002Fimage\u002FIMG_4693682682886935.svg","ColorIcon":"https:\u002F\u002Feps-common-public-boe.tos-ap-southeast-1.bytepluses.com\u002Feps-cms\u002Fboe\u002Fimage\u002FIMG_4693697815935805.svg","GeneralCategory":"AI-Personalization"},{"Name":"Data Analytics","Code":"DataIntel","Icon":"https:\u002F\u002Feps-common-public-boe.tos-ap-southeast-1.bytepluses.com\u002Feps-cms\u002Fboe\u002Fimage\u002FIMG_4693959506950973.png","ColorIcon":"https:\u002F\u002Feps-common-public-boe.tos-ap-southeast-1.bytepluses.com\u002Feps-cms\u002Fboe\u002Fimage\u002FIMG_4693984354007869.png","GeneralCategory":"DataIntelligence"},{"Name":"Cloud Network","Code":"CloudNetwork","Icon":"","ColorIcon":"","GeneralCategory":"Networking"},{"Name":"Hybrid Cloud Network","Code":"HybridCloudNetwork","Icon":"","ColorIcon":"","GeneralCategory":"Networking"},{"Name":"Cross Region Network","Code":"CrossRegionNetwork","Icon":"","ColorIcon":"","GeneralCategory":"Networking"},{"Name":"Cloud Server","Code":"CloudServer","Icon":"","ColorIcon":"","GeneralCategory":"Compute"},{"Name":"Relational Database","Code":"RelationalDatabase","Icon":"","ColorIcon":"","GeneralCategory":"Database"},{"Name":"NoSQL Database","Code":"NoSQLDatabase","Icon":"","ColorIcon":"","GeneralCategory":"Database"},{"Name":"Database Management Tools","Code":"DatabaseManagementTools","Icon":"","ColorIcon":"","GeneralCategory":"Database"},{"Name":"Al Search Service","Code":"Al Search Service","Icon":"https:\u002F\u002Feps-common-public.tos-ap-southeast-1.bytepluses.com\u002Feps-cms\u002Fimage\u002FIMG_14047814631820260.png","ColorIcon":"https:\u002F\u002Feps-common-public.tos-ap-southeast-1.bytepluses.com\u002Feps-cms\u002Fimage\u002FIMG_14047920663870526.png","GeneralCategory":"Database"},{"Name":"Data Security","Code":"DataSecurity","Icon":"https:\u002F\u002Feps-common-public-boe.tos-ap-southeast-1.bytepluses.com\u002Feps-cms\u002Fboe\u002Fimage\u002FIMG_4694365297474365.svg","ColorIcon":"https:\u002F\u002Feps-common-public-boe.tos-ap-southeast-1.bytepluses.com\u002Feps-cms\u002Fboe\u002Fimage\u002FIMG_4694390614293309.svg","GeneralCategory":"Security"},{"Name":"Cloud Security","Code":"CloudSecurity","Icon":"","ColorIcon":"https:\u002F\u002Feps-common-public-boe.tos-ap-southeast-1.bytepluses.com\u002Feps-cms\u002Fboe\u002Fimage\u002FIMG_4694442774657853.svg","GeneralCategory":"Security"},{"Name":"Containers Services","Code":"ContainersServices","Icon":"","ColorIcon":"","GeneralCategory":"Containers&amp;Middleware"},{"Name":"Middleware","Code":"Middleware","Icon":"","ColorIcon":"","GeneralCategory":"Containers&amp;Middleware"},{"Name":"Serverless","Code":"Serverless","Icon":"","ColorIcon":"","GeneralCategory":"Containers&amp;Middleware"},{"Name":"Observability","Code":"Observability","Icon":"","ColorIcon":"","GeneralCategory":"Containers&amp;Middleware"},{"Name":"Enterprise Services","Code":"EnterServices","Icon":"https:\u002F\u002Feps-common-public-boe.tos-ap-southeast-1.bytepluses.com\u002Feps-cms\u002Fboe\u002Fimage\u002FIMG_4693452096830269.png","ColorIcon":"","GeneralCategory":"EnterpriseServices"},{"Name":"Essential Storage Service","Code":"EssentialStorageService","Icon":"","ColorIcon":"","GeneralCategory":"Storage"},{"Name":"Content Delivery","Code":"Content","Icon":"https:\u002F\u002Feps-common-public-boe.tos-ap-southeast-1.bytepluses.com\u002Feps-cms\u002Fboe\u002Fimage\u002FIMG_4693852518644541.svg","ColorIcon":"https:\u002F\u002Feps-common-public-boe.tos-ap-southeast-1.bytepluses.com\u002Feps-cms\u002Fboe\u002Fimage\u002FIMG_4693863239285527.svg","GeneralCategory":"ContentDelivery"},{"Name":"Media Services","Code":"Media Services","Icon":"https:\u002F\u002Feps-common-public-boe.tos-ap-southeast-1.bytepluses.com\u002Feps-cms\u002Fboe\u002Fimage\u002FIMG_4693589149907735.svg","ColorIcon":"https:\u002F\u002Feps-common-public-boe.tos-ap-southeast-1.bytepluses.com\u002Feps-cms\u002Fboe\u002Fimage\u002FIMG_4693604551392023.svg","GeneralCategory":"VideoSolutions"}],"Menu":[{"category":"Personaliza","code":"vision","displayName":"BytePlus Media Processing Services","name":"BytePlus Media Processing Services","product":"vision","briefDesc":"The world-leading vision technologies based on Machine Learning: from visual generation to recognition","needOpen":false,"logo":"https:\u002F\u002Fassets.byteplus.com\u002Fobj\u002Fbyteplus-assets\u002Ficons\u002FVision.svg","domain":"","url":"\u002Fai","keyWord":[],"surveyurl":"","doc":{"url":"","desc":""},"visible":"1","isDefault":"1","quickEntryList":[]},{"category":"Personaliza","code":"creativestore","displayName":"BytePlus Creative Store","name":"BytePlus Creative Store","product":"creativestore","briefDesc":"Browse our extensive creative library and find the effect that's right for you","needOpen":false,"logo":"https:\u002F\u002Fassets.byteplus.com\u002Fobj\u002Fbyteplus-assets\u002Ficons\u002FCreative_store.svg","domain":"","url":"https:\u002F\u002Fcreativestore.byteplus.com","keyWord":[],"surveyurl":"","doc":{"url":"","desc":""},"visible":"1","isDefault":"0","quickEntryList":[]},{"category":"Personaliza","code":"ModelArk","displayName":"ModelArk","name":"ModelArk","product":"ModelArk","briefDesc":"ModelArk is a Platform as a Service(Paas), serving Large Language Models","needOpen":false,"logo":"https:\u002F\u002Feps-common-public.tos-ap-southeast-1.bytepluses.com\u002Feps-cms\u002Fimage\u002FIMG_2739903066541028.svg","domain":"","url":"\u002Fark","keyWord":[],"surveyurl":"","doc":{"url":"","desc":""},"visible":"1","isDefault":"0","quickEntryList":[]},{"category":"Personaliza","code":"MLP","displayName":"MLP","name":"MLP","product":"MLP","briefDesc":"A fully-managed, unified machine learning platform for building generative AI","needOpen":false,"logo":"https:\u002F\u002Feps-common-public.tos-ap-southeast-1.bytepluses.com\u002Feps-cms\u002Fimage\u002FIMG_5916721110060309.jpg","domain":"","url":"\u002Fml-platform","keyWord":[],"surveyurl":"","doc":{"url":"","desc":""},"visible":"1","isDefault":"0","quickEntryList":[]},{"category":"Personaliza","code":"Vector Database cloud","displayName":"Vector Database cloud","name":"Vector Database cloud","product":"Vector Database cloud","briefDesc":"VikingDB, a cloud - native vector database, can efficiently store and retrieve massive high - dimensional vector data.","needOpen":false,"logo":"https:\u002F\u002Feps-common-public.tos-ap-southeast-1.bytepluses.com\u002Feps-cms\u002Fimage\u002FIMG_10848059114175550.png","domain":"","url":"\u002Fvikingdb","keyWord":[],"surveyurl":"","doc":{"url":"","desc":""},"visible":"1","isDefault":"0","quickEntryList":[]},{"category":"Personaliza","code":"BytePlus Voice","displayName":"BytePlus Voice","name":"BytePlus Voice","product":"BytePlus Voice","briefDesc":"Text-to-Speech, Voice Replication, and Speech Recognition large models","needOpen":false,"logo":"https:\u002F\u002Feps-common-public.tos-ap-southeast-1.bytepluses.com\u002Feps-cms\u002Fimage\u002FIMG_14059489074350449.svg","domain":"","url":"\u002Fvoice","keyWord":[],"surveyurl":"","doc":{"url":"","desc":""},"visible":"1","isDefault":"0","quickEntryList":[]},{"category":"DataIntel","code":"datarangers","displayName":"BytePlus Data Intelligence","name":"BytePlus Data Intelligence","product":"datarangers","briefDesc":"An all-in-one analytics and testing platform","needOpen":false,"logo":"https:\u002F\u002Fassets.byteplus.com\u002Fobj\u002Fbyteplus-assets\u002Ficons\u002FDI.svg","domain":"","url":"\u002Fdatarangers","keyWord":[],"surveyurl":"","doc":{"url":"","desc":""},"visible":"1","isDefault":"1","quickEntryList":[]},{"category":"DataIntel","code":"ByteHouse Cloud Data Warehouse","displayName":"ByteHouse Cloud Data Warehouse","name":"ByteHouse Cloud Data Warehouse","product":"ByteHouse Cloud Data Warehouse","briefDesc":"ByteHouse is a data warehouse product independently developed by BytePlus, providing stronger query services and data writing performance on massive data.","needOpen":false,"logo":"","domain":"","url":"\u002Fbytehouse","keyWord":[],"surveyurl":"","doc":{"url":"","desc":""},"visible":"1","isDefault":"0","quickEntryList":[]},{"category":"CloudNetwork","code":"Application Load Balancer","displayName":"Application Load Balancer","name":"Application Load Balancer","product":"Application Load Balancer","briefDesc":"Stable, scalable, secure, and high- performance application-layer load balancing","needOpen":false,"logo":"https:\u002F\u002Fassets.byteplus.com\u002Fobj\u002Fbyteplus-assets\u002Ficons\u002Fwaf.svg","domain":"","url":"\u002Falb","keyWord":[],"surveyurl":"","doc":{"url":"","desc":""},"visible":"1","isDefault":"0","quickEntryList":[]},{"category":"CloudNetwork","code":"Cloud Load Balancer","displayName":"Cloud Load Balancer","name":"Cloud Load Balancer","product":"Cloud Load Balancer","briefDesc":"A service that distributes inbound traffic to multiple backend servers based on set policies","needOpen":false,"logo":"https:\u002F\u002Fassets.byteplus.com\u002Fobj\u002Fbyteplus-assets\u002Ficons\u002Fwaf.svg","domain":"","url":"\u002Fclb","keyWord":[],"surveyurl":"","doc":{"url":"","desc":""},"visible":"1","isDefault":"1","quickEntryList":[]},{"category":"CloudNetwork","code":"Elastic IP","displayName":"Elastic IP","name":"Elastic IP","product":"Elastic IP","briefDesc":"Take the first step in connecting your cloud resources to the internet by associating Elastic IPs","needOpen":false,"logo":"https:\u002F\u002Fassets.byteplus.com\u002Fobj\u002Fbyteplus-assets\u002Ficons\u002Fwaf.svg","domain":"","url":"\u002Feip","keyWord":[],"surveyurl":"","doc":{"url":"","desc":""},"visible":"1","isDefault":"0","quickEntryList":[]},{"category":"CloudNetwork","code":"NAT Gateway","displayName":"NAT Gateway","name":"NAT Gateway","product":"NAT Gateway","briefDesc":"NAT Gateway offer network address translation services for ECS instances in a VPC","needOpen":false,"logo":"https:\u002F\u002Fassets.byteplus.com\u002Fobj\u002Fbyteplus-assets\u002Ficons\u002Fwaf.svg","domain":"","url":"\u002Fnat","keyWord":[],"surveyurl":"","doc":{"url":"","desc":""},"visible":"1","isDefault":"1","quickEntryList":[]},{"category":"CloudNetwork","code":"Virtual Private Cloud","displayName":"Virtual Private Cloud","name":"Virtual Private Cloud","product":"Virtual Private Cloud","briefDesc":"VPC service builds an isolated and autonomously configured virtual network environment","needOpen":false,"logo":"https:\u002F\u002Feps-common-public.tos-ap-southeast-1.bytepluses.com\u002Feps-cms\u002Fimage\u002FIMG_20666580425813495.svg","domain":"","url":"\u002Fvpc","keyWord":[],"surveyurl":"","doc":{"url":"","desc":""},"visible":"1","isDefault":"1","quickEntryList":[]},{"category":"CloudNetwork","code":"bwp","displayName":"Bandwidth Package","name":"Bandwidth Package","product":"bwp","briefDesc":"Bandwidth Package supports reuse and sharing of bandwidth and diversified billing methods","needOpen":false,"logo":"https:\u002F\u002Feps-common-public.tos-ap-southeast-1.bytepluses.com\u002Feps-cms\u002Fimage\u002FIMG_20663250282660332.svg","domain":"console.byteplus.com","url":"\u002Feip\u002Fcbwps","keyWord":[],"surveyurl":"","doc":{"url":"","desc":""},"visible":"1","isDefault":"0","quickEntryList":[]},{"category":"CloudNetwork","code":"BytePlus Transit Router","displayName":"Transit Router","name":"Transit Router","product":"BytePlus Transit Router","briefDesc":"Transit Router allows you to freely create any type of network topologies on cloud","needOpen":false,"logo":"https:\u002F\u002Feps-common-public.tos-ap-southeast-1.bytepluses.com\u002Feps-cms\u002Fimage\u002FIMG_20663136298264946.svg","domain":"console.byteplus.com","url":"\u002Ftr","keyWord":["TR"],"surveyurl":"","doc":{"url":"","desc":""},"visible":"1","isDefault":"0","quickEntryList":[]},{"category":"CloudNetwork","code":"Private Link","displayName":"PrivateLink","name":"PrivateLink","product":"Private Link","briefDesc":"Establish secure connections between VPCs to build a secure networking solution","needOpen":false,"logo":"https:\u002F\u002Feps-common-public.tos-ap-southeast-1.bytepluses.com\u002Feps-cms\u002Fimage\u002FIMG_20666381213150711.svg","domain":"console.byteplus.com","url":"\u002Fpl","keyWord":[],"surveyurl":"","doc":{"url":"","desc":""},"visible":"1","isDefault":"0","quickEntryList":[]},{"category":"HybridCloudNetwork","code":"Direct Connect","displayName":"Direct Connect","name":"Direct Connect","product":"Direct Connect","briefDesc":"DC establishes high-speed and secure dedicated channels between private networks","needOpen":false,"logo":"https:\u002F\u002Fassets.byteplus.com\u002Fobj\u002Fbyteplus-assets\u002Ficons\u002Fwaf.svg","domain":"","url":"\u002Fdc","keyWord":[],"surveyurl":"","doc":{"url":"","desc":""},"visible":"1","isDefault":"1","quickEntryList":[]},{"category":"HybridCloudNetwork","code":"Virtual Private Network","displayName":"Virtual Private Network","name":"Virtual Private Network","product":"Virtual Private Network","briefDesc":"A temporary, secure, and reliable tunnel over internet and encrypted with a specific algorithm","needOpen":false,"logo":"https:\u002F\u002Feps-common-public.tos-ap-southeast-1.bytepluses.com\u002Feps-cms\u002Fimage\u002FIMG_20665877963779575.svg","domain":"","url":"\u002Fvpn","keyWord":[],"surveyurl":"","doc":{"url":"","desc":""},"visible":"1","isDefault":"0","quickEntryList":[]},{"category":"CrossRegionNetwork","code":"Cloud Enterprise Network (CEN)","displayName":"Cloud Enterprise Network (CEN)","name":"Cloud Enterprise Network (CEN)","product":"Cloud Enterprise Network (CEN)","briefDesc":"Build high speed and high-reliability enterprise-grade global networks","needOpen":false,"logo":"https:\u002F\u002Fassets.byteplus.com\u002Fobj\u002Fbyteplus-assets\u002Ficons\u002Fwaf.svg","domain":"","url":"\u002Fcen","keyWord":[],"surveyurl":"","doc":{"url":"","desc":""},"visible":"1","isDefault":"0","quickEntryList":[]},{"category":"CloudServer","code":"Elastic Compute Service","displayName":"Elastic Compute Service","name":"Elastic Compute Service","product":"Elastic Compute Service","briefDesc":"A secure, stable and elastic cloud computing service","needOpen":false,"logo":"https:\u002F\u002Feps-common-public.tos-ap-southeast-1.bytepluses.com\u002Feps-cms\u002Fimage\u002FIMG_20652817102448451.svg","domain":"","url":"\u002Fecs","keyWord":[],"surveyurl":"","doc":{"url":"","desc":""},"visible":"1","isDefault":"1","quickEntryList":[]},{"category":"CloudServer","code":"Auto Scaling","displayName":"Auto Scaling","name":"Auto Scaling","product":"Auto Scaling","briefDesc":"Auto Scaling automatically adjusts computing resources to achieve high application availability","needOpen":false,"logo":"https:\u002F\u002Feps-common-public.tos-ap-southeast-1.bytepluses.com\u002Feps-cms\u002Fimage\u002FIMG_38680579117476210.svg","domain":"","url":"\u002Fas","keyWord":[],"surveyurl":"","doc":{"url":"","desc":""},"visible":"1","isDefault":"0","quickEntryList":[]},{"category":"RelationalDatabase","code":"RDS for MySQL","displayName":"RDS for MySQL","name":"RDS for MySQL","product":"RDS for MySQL","briefDesc":"A reliable, elastic, and easy-to-use relational database service ready to go right out of the box","needOpen":false,"logo":"https:\u002F\u002Fassets.byteplus.com\u002Fobj\u002Fbyteplus-assets\u002Ficons\u002Fwaf.svg","domain":"","url":"\u002Fdb","keyWord":[],"surveyurl":"","doc":{"url":"","desc":""},"visible":"1","isDefault":"1","quickEntryList":[]},{"category":"RelationalDatabase","code":"RDS for PostgreSQL","displayName":"RDS for PostgreSQL","name":"RDS for PostgreSQL","product":"RDS for PostgreSQL","briefDesc":"A reliable, elastic, and easy-to-use relational database service ready to go right out of the box","needOpen":false,"logo":"https:\u002F\u002Fassets.byteplus.com\u002Fobj\u002Fbyteplus-assets\u002Ficons\u002Fwaf.svg","domain":"","url":"\u002Fdb\u002Frds-pg","keyWord":[],"surveyurl":"","doc":{"url":"","desc":""},"visible":"1","isDefault":"1","quickEntryList":[]},{"category":"NoSQLDatabase","code":"Cache for Redis","displayName":"Cache for Redis","name":"Cache for Redis","product":"Cache for Redis","briefDesc":"Set up, run, and expand Redis- compatible cache databases in the cloud with ease","needOpen":false,"logo":"https:\u002F\u002Fassets.byteplus.com\u002Fobj\u002Fbyteplus-assets\u002Ficons\u002Fwaf.svg","domain":"","url":"\u002Fredis","keyWord":[],"surveyurl":"","doc":{"url":"","desc":""},"visible":"1","isDefault":"0","quickEntryList":[]},{"category":"NoSQLDatabase","code":"DocumentDB for MongoDB","displayName":"Document Database for MongoDB","name":"Document Database for MongoDB","product":"DocumentDB for MongoDB","briefDesc":"Stable and reliable out-of-the-box cloud service fully compatible with native MongoDB","needOpen":false,"logo":"https:\u002F\u002Fassets.byteplus.com\u002Fobj\u002Fbyteplus-assets\u002Ficons\u002Fwaf.svg","domain":"","url":"\u002Fmongodb","keyWord":[],"surveyurl":"","doc":{"url":"","desc":""},"visible":"1","isDefault":"1","quickEntryList":[]},{"category":"DatabaseManagementTools","code":"Database Transmission Service","displayName":"Database Transmission Service","name":"Database Transmission Service","product":"Database Transmission Service","briefDesc":"Easily migrate databases to the cloud without interrupting business operations","needOpen":false,"logo":"https:\u002F\u002Fassets.byteplus.com\u002Fobj\u002Fbyteplus-assets\u002Ficons\u002Fwaf.svg","domain":"","url":"\u002Fdts","keyWord":[],"surveyurl":"","doc":{"url":"","desc":""},"visible":"1","isDefault":"1","quickEntryList":[]},{"category":"DatabaseManagementTools","code":"DWS","displayName":"Database workshop","name":"Database workshop","product":"DWS","briefDesc":"Cloud-based SaaS platform for managing the lifecycle of various databases","needOpen":false,"logo":"https:\u002F\u002Feps-common-public.tos-ap-southeast-1.bytepluses.com\u002Feps-cms\u002Fimage\u002FIMG_17690339552838124.svg","domain":"console.byteplus.com","url":"\u002Fdbw","keyWord":[],"surveyurl":"","doc":{"url":"","desc":""},"visible":"1","isDefault":"0","quickEntryList":[]},{"category":"Al Search Service","code":"Cloud Search","displayName":"Cloud Search","name":"Cloud Search","product":"Cloud Search","briefDesc":"A fully managed, distributed online search service","needOpen":false,"logo":"https:\u002F\u002Feps-common-public.tos-ap-southeast-1.bytepluses.com\u002Feps-cms\u002Fimage\u002FIMG_17693203088059895.svg","domain":"console.byteplus.com","url":"\u002Fes","keyWord":[],"surveyurl":"","doc":{"url":"","desc":""},"visible":"1","isDefault":"0","quickEntryList":[]},{"category":"DataSecurity","code":"Key Management Service","displayName":"Key Management Service","name":"Key Management Service","product":"Key Management Service","briefDesc":"Provide comprehensive, fully managed key and credential management services","needOpen":false,"logo":"https:\u002F\u002Fassets.byteplus.com\u002Fobj\u002Fbyteplus-assets\u002Ficons\u002Fwaf.svg","domain":"","url":"\u002Fkms","keyWord":[],"surveyurl":"","doc":{"url":"","desc":""},"visible":"1","isDefault":"0","quickEntryList":[]},{"category":"CloudSecurity","code":"waf","displayName":"Web Application Firewall","name":"Web Application Firewall","product":"waf","briefDesc":"Protect web applications from malicious attacks","needOpen":false,"logo":"https:\u002F\u002Fassets.byteplus.com\u002Fobj\u002Fbyteplus-assets\u002Ficons\u002Fwaf.svg","domain":"","url":"\u002Fwaf\u002Foverview","keyWord":[],"surveyurl":"","doc":{"url":"","desc":""},"visible":"1","isDefault":"1","quickEntryList":[]},{"category":"CloudSecurity","code":"ddos-protection","displayName":"BytePlus Advanced DDoS Protection","name":"BytePlus Advanced DDoS Protection","product":"ddos-protection","briefDesc":"Protect your resources from DDoS attacks","needOpen":false,"logo":"https:\u002F\u002Feps-common-public.tos-ap-southeast-1.bytepluses.com\u002Feps-cms\u002Fimage\u002FIMG_1449797617739680.svg","domain":"","url":"\u002Fddos-protection\u002Fadvance","keyWord":[],"surveyurl":"","doc":{"url":"","desc":""},"visible":"1","isDefault":"1","quickEntryList":[]},{"category":"CloudSecurity","code":"Cloud Firewall","displayName":"Cloud Firewall","name":"Cloud Firewall","product":"Cloud Firewall","briefDesc":"Traffic control and security protection for the Internet, virtual private cloud (VPCs), and hosts in VPCs","needOpen":false,"logo":"https:\u002F\u002Feps-common-public.tos-ap-southeast-1.bytepluses.com\u002Feps-cms\u002Fimage\u002FIMG_20662189811624306.svg","domain":"console.byteplus.com","url":"\u002Ffirewall","keyWord":[],"surveyurl":"","doc":{"url":"","desc":""},"visible":"1","isDefault":"1","quickEntryList":[]},{"category":"CloudSecurity","code":"Network Traffic Analysis","displayName":"Network Detection and Response","name":"Network Detection and Response","product":"Network Traffic Analysis","briefDesc":"Network traffic  monitoring  to detect malicious activity and respond to incidents","needOpen":false,"logo":"https:\u002F\u002Feps-common-public.tos-ap-southeast-1.bytepluses.com\u002Feps-cms\u002Fimage\u002FIMG_20653237287840114.svg","domain":"console.byteplus.com","url":"\u002Fndr","keyWord":[],"surveyurl":"","doc":{"url":"","desc":""},"visible":"1","isDefault":"1","quickEntryList":[]},{"category":"CloudSecurity","code":"Cloud DDoS protection_Basic","displayName":"Cloud DDoS protection_Basic","name":"Cloud DDoS protection_Basic","product":"Cloud DDoS protection_Basic","briefDesc":"Ready-to-use DDoS protection service.","needOpen":false,"logo":"https:\u002F\u002Feps-common-public.tos-ap-southeast-1.bytepluses.com\u002Feps-cms\u002Fimage\u002FIMG_6084092730804593.svg","domain":"","url":"\u002Fddos-protection","keyWord":[],"surveyurl":"","doc":{"url":"","desc":""},"visible":"1","isDefault":"0","quickEntryList":[]},{"category":"CloudSecurity","code":"SealSuite","displayName":"SealSuite","name":"SealSuite","product":"SealSuite","briefDesc":"AI-empowered ZTNA security solutions to safeguard corporate data, network and endpoints.","needOpen":false,"logo":"https:\u002F\u002Feps-common-public.tos-ap-southeast-1.bytepluses.com\u002Feps-cms\u002Fimage\u002FIMG_14769555800898622.jpg","domain":"","url":"\u002Fsealsuite","keyWord":[],"surveyurl":"","doc":{"url":"","desc":""},"visible":"1","isDefault":"0","quickEntryList":[]},{"category":"ContainersServices","code":"Volcengine Kubernetes Engine","displayName":"Vital Kubernetes Engine","name":"Vital Kubernetes Engine","product":"Volcengine Kubernetes Engine","briefDesc":"Enterprise-grade container management with high performance, reliability, and superior elasticity","needOpen":false,"logo":"https:\u002F\u002Feps-common-public.tos-ap-southeast-1.bytepluses.com\u002Feps-cms\u002Fimage\u002FIMG_20661921241933635.svg","domain":"console.byteplus.com","url":"\u002Fvke","keyWord":[],"surveyurl":"","doc":{"url":"","desc":""},"visible":"1","isDefault":"0","quickEntryList":[]},{"category":"ContainersServices","code":"Container Registry","displayName":"Container Registry","name":"Container Registry","product":"Container Registry","briefDesc":"Highly secure and available service for managing container images","needOpen":false,"logo":"https:\u002F\u002Feps-common-public.tos-ap-southeast-1.bytepluses.com\u002Feps-cms\u002Fimage\u002FIMG_20662124615362930.svg","domain":"console.byteplus.com","url":"\u002Fcr","keyWord":[],"surveyurl":"","doc":{"url":"","desc":""},"visible":"1","isDefault":"1","quickEntryList":[]},{"category":"Middleware","code":"Message Queue for Kafka","displayName":"Message Queue for Kafka","name":"Message Queue for Kafka","product":"Message Queue for Kafka","briefDesc":"A distributed messaging middleware service developed on top of Apache Kafka","needOpen":false,"logo":"https:\u002F\u002Fassets.byteplus.com\u002Fobj\u002Fbyteplus-assets\u002Ficons\u002Fwaf.svg","domain":"","url":"\u002Fkafka","keyWord":[],"surveyurl":"","doc":{"url":"","desc":""},"visible":"1","isDefault":"1","quickEntryList":[]},{"category":"Middleware","code":"Microservices Engine","displayName":"Microservices Engine","name":"Microservices Engine","product":"Microservices Engine","briefDesc":"One-stop microservice platform designed for the full lifecycle of microservices","needOpen":false,"logo":"https:\u002F\u002Feps-common-public.tos-ap-southeast-1.bytepluses.com\u002Feps-cms\u002Fimage\u002FIMG_38053780113113580.svg","domain":"","url":"\u002Fmse","keyWord":[],"surveyurl":"","doc":{"url":"","desc":""},"visible":"1","isDefault":"0","quickEntryList":[]},{"category":"Observability","code":"CloudMonitor","displayName":"Cloud Monitor","name":"Cloud Monitor","product":"CloudMonitor","briefDesc":"Offer a one-stop monitoring and alarm solution","needOpen":false,"logo":"https:\u002F\u002Fassets.byteplus.com\u002Fobj\u002Fbyteplus-assets\u002Ficons\u002Fwaf.svg","domain":"","url":"\u002Fcloud-monitor","keyWord":[],"surveyurl":"","doc":{"url":"","desc":""},"visible":"1","isDefault":"1","quickEntryList":[]},{"category":"Observability","code":"Volcengine Managed Service for Prometheus","displayName":"Vital Managed Service for Prometheus","name":"Vital Managed Service for Prometheus","product":"Volcengine Managed Service for Prometheus","briefDesc":"High availability, O&amp;M-free, cloud-native monitoring system","needOpen":false,"logo":"https:\u002F\u002Feps-common-public.tos-ap-southeast-1.bytepluses.com\u002Feps-cms\u002Fimage\u002FIMG_20653439386167107.svg","domain":"console.byteplus.com","url":"\u002Fprometheus","keyWord":[],"surveyurl":"","doc":{"url":"","desc":""},"visible":"1","isDefault":"1","quickEntryList":[]},{"category":"EnterServices","code":"sms","displayName":"BytePlus Messaging","name":"BytePlus Messaging","product":"sms","briefDesc":"Multi-channel message service including SMS, WhatsApp, and voice messages","needOpen":false,"logo":"https:\u002F\u002Fassets.byteplus.com\u002Fobj\u002Fbyteplus-assets\u002Ficons\u002FSMS.svg","domain":"","url":"\u002Fsms","keyWord":[],"surveyurl":"","doc":{"url":"","desc":""},"visible":"1","isDefault":"1","quickEntryList":[]},{"category":"EnterServices","code":"certificatecenter","displayName":"BytePlus Certificate Center","name":"BytePlus Certificate Center","product":"certificatecenter","briefDesc":"Order, import, and deploy SSL certificates for integration with BytePlus services","needOpen":false,"logo":"https:\u002F\u002Fassets.byteplus.com\u002Fobj\u002Fbyteplus-assets\u002Ficons\u002FCertificate_Center.svg","domain":"","url":"\u002Fcertificate-center","keyWord":[],"surveyurl":"","doc":{"url":"","desc":""},"visible":"1","isDefault":"0","quickEntryList":[]},{"category":"EnterServices","code":"dnssuite","displayName":"BytePlus DNS Suite","name":"BytePlus DNS Suite","product":"dnssuite","briefDesc":"Fast, secure, and reliable DNS and DNS-based routing service","needOpen":false,"logo":"https:\u002F\u002Fassets.byteplus.com\u002Fobj\u002Fbyteplus-assets\u002Ficons\u002FDNS_Suite.svg","domain":"","url":"\u002Fdns-suite","keyWord":[],"surveyurl":"","doc":{"url":"","desc":""},"visible":"1","isDefault":"1","quickEntryList":[]},{"category":"EnterServices","code":"BytePlus Domains","displayName":"BytePlus Domains","name":"BytePlus Domains","product":"BytePlus Domains","briefDesc":"Comprehensive services including domain registration, transfer, renewal, and management.","needOpen":false,"logo":"https:\u002F\u002Feps-common-public.tos-ap-southeast-1.bytepluses.com\u002Feps-cms\u002Fimage\u002FIMG_2740448074402788.svg","domain":"","url":"\u002Fdomain-service\u002Fdomain","keyWord":[],"surveyurl":"","doc":{"url":"","desc":""},"visible":"1","isDefault":"0","quickEntryList":[]},{"category":"EssentialStorageService","code":"Elastic Block Storage","displayName":"Elastic Block Storage","name":"Elastic Block Storage","product":"Elastic Block Storage","briefDesc":"High-availability, high-reliability, and high-performance block storage devices offered by BytePlus","needOpen":false,"logo":"https:\u002F\u002Fassets.byteplus.com\u002Fobj\u002Fbyteplus-assets\u002Ficons\u002Fwaf.svg","domain":"","url":"\u002Febs","keyWord":[],"surveyurl":"","doc":{"url":"","desc":""},"visible":"1","isDefault":"0","quickEntryList":[]},{"category":"EssentialStorageService","code":"FileNAS","displayName":"FileNAS","name":"FileNAS","product":"FileNAS","briefDesc":"A file storage service designed for elastic computing, container services, and AI applications ","needOpen":false,"logo":"https:\u002F\u002Feps-common-public.tos-ap-southeast-1.bytepluses.com\u002Feps-cms\u002Fimage\u002FIMG_20661914514276844.svg","domain":"console.byteplus.com","url":"\u002Ffilenas","keyWord":[],"surveyurl":"","doc":{"url":"","desc":""},"visible":"1","isDefault":"0","quickEntryList":[]},{"category":"EssentialStorageService","code":"Tinder Log Service","displayName":"Torch Log Service","name":"Torch Log Service","product":"Tinder Log Service","briefDesc":"One-stop platform for massive log data","needOpen":false,"logo":"https:\u002F\u002Fassets.byteplus.com\u002Fobj\u002Fbyteplus-assets\u002Ficons\u002Fwaf.svg","domain":"","url":"\u002Ftls","keyWord":[],"surveyurl":"","doc":{"url":"","desc":""},"visible":"1","isDefault":"1","quickEntryList":[]},{"category":"EssentialStorageService","code":"vePFS","displayName":"Parallel File Storage","name":"Parallel File Storage","product":"vePFS","briefDesc":"PFS is a parallel file storage service featuring high throughput, low latency, and scalability","needOpen":false,"logo":"https:\u002F\u002Fassets.byteplus.com\u002Fobj\u002Fbyteplus-assets\u002Ficons\u002Fwaf.svg","domain":"console.byteplus.com","url":"\u002Fpfs","keyWord":[],"surveyurl":"","doc":{"url":"","desc":""},"visible":"1","isDefault":"1","quickEntryList":[]},{"category":"EssentialStorageService","code":"TOS","displayName":"Torch Object Storage","name":"Torch Object Storage","product":"TOS","briefDesc":"Rapidly scalable, low cost cloud storage for diverse and high performance applications","needOpen":false,"logo":"https:\u002F\u002Fassets.byteplus.com\u002Fobj\u002Fbyteplus-assets\u002Ficons\u002Fwaf.svg","domain":"","url":"\u002Ftos","keyWord":[],"surveyurl":"","doc":{"url":"","desc":""},"visible":"1","isDefault":"0","quickEntryList":[]},{"category":"EssentialStorageService","code":"Data Migration Service","displayName":"Data Migration Service","name":"Data Migration Service","product":"Data Migration Service","briefDesc":"DMS allows you to migrate data from third-party cloud-based object storage to Torch Object Storage ","needOpen":false,"logo":"https:\u002F\u002Feps-common-public.tos-ap-southeast-1.bytepluses.com\u002Feps-cms\u002Fimage\u002FIMG_17799256198922732.svg","domain":"console.byteplus.com","url":"\u002Fdms","keyWord":[],"surveyurl":"","doc":{"url":"","desc":""},"visible":"1","isDefault":"0","quickEntryList":[]},{"category":"Content","code":"cdn","displayName":"BytePlus CDN","name":"BytePlus CDN","product":"cdn","briefDesc":"Rapid content delivery for an optimal user experience","needOpen":false,"logo":"https:\u002F\u002Fassets.byteplus.com\u002Fobj\u002Fbyteplus-assets\u002Ficons\u002FCDN.svg","domain":"","url":"\u002Fcdn","keyWord":[],"surveyurl":"","doc":{"url":"","desc":""},"visible":"1","isDefault":"1","quickEntryList":[]},{"category":"Content","code":"Global Accelerator","displayName":"Global Accelerator","name":"Global Accelerator","product":"Global Accelerator","briefDesc":"Global Accelerator","needOpen":false,"logo":"https:\u002F\u002Feps-common-public.tos-ap-southeast-1.bytepluses.com\u002Feps-cms\u002Fimage\u002FIMG_20664584322985463.svg","domain":"","url":"\u002Fga","keyWord":[],"surveyurl":"","doc":{"url":"","desc":""},"visible":"1","isDefault":"0","quickEntryList":[]},{"category":"Media Services","code":"Live","displayName":"BytePlus MediaLive","name":"BytePlus MediaLive","product":"Live","briefDesc":"Professional solution for live video and audio","needOpen":false,"logo":"https:\u002F\u002Fassets.byteplus.com\u002Fobj\u002Fbyteplus-assets\u002Ficons\u002FMediaLive.svg","domain":"","url":"\u002Flive","keyWord":[],"surveyurl":"","doc":{"url":"","desc":""},"visible":"1","isDefault":"1","quickEntryList":[]},{"category":"Media Services","code":"rtc","displayName":"BytePlus RTC","name":"BytePlus RTC","product":"rtc","briefDesc":"Real-time communication capabilities including voice and video calls","needOpen":false,"logo":"https:\u002F\u002Fassets.byteplus.com\u002Fobj\u002Fbyteplus-assets\u002Ficons\u002FRTC.svg","domain":"","url":"\u002Frtc","keyWord":[],"surveyurl":"","doc":{"url":"","desc":""},"visible":"1","isDefault":"1","quickEntryList":[]},{"category":"Media Services","code":"vodpaas","displayName":"BytePlus VOD","name":"BytePlus VOD","product":"vodpaas","briefDesc":"Effortlessly launch VOD services and apps with extensive features and easy integration","needOpen":false,"logo":"https:\u002F\u002Fassets.byteplus.com\u002Fobj\u002Fbyteplus-assets\u002Ficons\u002FVOD.svg","domain":"","url":"\u002Fvodpaas","keyWord":[],"surveyurl":"","doc":{"url":"","desc":""},"visible":"1","isDefault":"1","quickEntryList":[]},{"category":"Media Services","code":"livesaas","displayName":"BytePlus Live","name":"BytePlus Live","product":"livesaas","briefDesc":"End-to-end streaming video solutions for live broadcasting","needOpen":false,"logo":"https:\u002F\u002Fassets.byteplus.com\u002Fobj\u002Fbyteplus-assets\u002Ficons\u002FLive.svg","domain":"console.byteplus.com","url":"\u002Flivesaas","keyWord":[],"surveyurl":"","doc":{"url":"","desc":""},"visible":"1","isDefault":"1","quickEntryList":[]}],"GeneralCategories":[{"Name":"AI &amp; Personalization","Code":"AI-Personalization","Icon":"https:\u002F\u002Feps-common-public.tos-ap-southeast-1.bytepluses.com\u002Feps-cms\u002Fimage\u002FIMG_9141514978504183.png","ColorIcon":"https:\u002F\u002Feps-common-public.tos-ap-southeast-1.bytepluses.com\u002Feps-cms\u002Fimage\u002FIMG_9138270919246316.png"},{"Name":"Data Analytics","Code":"DataIntelligence","Icon":"https:\u002F\u002Feps-common-public.tos-ap-southeast-1.bytepluses.com\u002Feps-cms\u002Fimage\u002FIMG_39087866034307564.svg","ColorIcon":"https:\u002F\u002Feps-common-public.tos-ap-southeast-1.bytepluses.com\u002Feps-cms\u002Fimage\u002FIMG_39087779564529475.svg"},{"Name":"Networking","Code":"Networking","Icon":"","ColorIcon":""},{"Name":"Compute","Code":"Compute","Icon":"","ColorIcon":""},{"Name":"Database","Code":"Database","Icon":"","ColorIcon":""},{"Name":"Security","Code":"Security","Icon":"","ColorIcon":""},{"Name":"Containers &amp; Middleware","Code":"Containers&amp;Middleware","Icon":"","ColorIcon":""},{"Name":"Enterprise Services","Code":"EnterpriseServices","Icon":"","ColorIcon":""},{"Name":"Storage","Code":"Storage","Icon":"","ColorIcon":""},{"Name":"Content Delivery","Code":"ContentDelivery","Icon":"","ColorIcon":""},{"Name":"Media Services","Code":"VideoSolutions","Icon":"https:\u002F\u002Feps-common-public.tos-ap-southeast-1.bytepluses.com\u002Feps-cms\u002Fimage\u002FIMG_9142977146438124.png","ColorIcon":"https:\u002F\u002Feps-common-public.tos-ap-southeast-1.bytepluses.com\u002Feps-cms\u002Fimage\u002FIMG_9142983622443500.png"}]},"env":{"isDev":false,"isBoe":false,"isBytePlus":true,"isVolcEngine":false,"isStable":false,"volcFrame":"","isProd":true,"isPPE":false,"isExternal":true,"isUnicom":false,"isPartner":false,"isEmbedded":false,"isPublicEmbedded":false,"isFinanceCloud":false,"isSelfDrive":false},"menu":[],"expenseMenu":[],"checkLoginProject":[],"forceAuthenticationProject":[],"zendesk":{"Token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiYWRtaW4iLCJlbWFpbCI6ImxpZmVpLnFhQGJ5dGVkYW5jZS5jb20iLCJqdGkiOiJlMDA0YWI2OC05ZGI4LTQ1YmMtOGRkMy03ZDM4NTFiMTZkYTAiLCJpYXQiOjE3MDA2NTIxODF9.mVU9xgQGG9t7GYsb0E4tnLlgnj1B5J5ZmxBlPSy5i4I","path":"access\u002Fjwt","redirectUrl":"https:\u002F\u002Fbyteplus.zendesk.com"}},"USER":{"Qualification":{"IsEligible":false,"MobileInfo":false,"BillingInfo":false,"PaymentInfo":false,"Qualified":false,"WhitelistProducts":[],"WhitelistShortTermProducts":[]}},"REGION_CONFIG":null}</textarea><textarea
+        class="loginBannerData" style="display:none;"></textarea>
+<div id="container">
+    <div id="navbar" class="vconsole--2IN_4"></div>
+    <div id="root">
+        <div class="signup-jQjQLM">
+            <div class="container-kLRytv"><a href="https://www.byteplus.com/" target="_blank" rel="noopener noreferrer"
+                                             class="logo-pZawnk"></a>
+                <div class="content-mOrPKr false">
+                    <div style="max-width: 35vw; width: 100%; height: 100%; min-height: 100vh; background: url(&quot;https://assets.byteplus.com/obj/byteplus-assets/public/byteplus-bg3.jpg&quot;) center center / cover no-repeat;"></div>
+                    <div class="rightContent-a1QKVr">
+                        <div class="main-bO4eJ3">
+                            <div class="title-QDt1tK">Sign up for BytePlus</div>
+                            <div class="arco-spin signupSpin-w7I9ZJ">
+                                <div class="arco-spin-children">
+                                    <section class="arco-layout">
+                                        <form class="arco-form arco-form-vertical arco-form-size-default signup-form-SPek_S">
+                                            <div class="arco-row-align-start arco-row-justify-start arco-form-item arco-form-layout-vertical">
+                                                <div class="arco-form-label-item"><label for="Email_input">
+                                                    Email</label></div>
+                                                <div class="arco-form-item-wrapper">
+                                                    <div class="arco-form-item-control-wrapper">
+                                                        <div class="arco-form-item-control" id="Email">
+                                                            <div class="arco-form-item-control-children"><input
+                                                                    id="Email_input" placeholder="Enter your email"
+                                                                    class="arco-input arco-input-size-default" value="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="arco-row-align-start arco-row-justify-start arco-form-item arco-form-layout-vertical">
+                                                <div class="arco-form-label-item"><label for="Identity_input">
+                                                    Username</label></div>
+                                                <div class="arco-form-item-wrapper">
+                                                    <div class="arco-form-item-control-wrapper">
+                                                        <div class="arco-form-item-control" id="Identity">
+                                                            <div class="arco-form-item-control-children"><span
+                                                                    class="arco-input-inner-wrapper arco-input-inner-wrapper-default arco-input-clear-wrapper"><input
+                                                                    id="Identity_input" maxlength="20"
+                                                                    placeholder="Create a username"
+                                                                    class="arco-input arco-input-size-default" value=""></span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="arco-row-align-start arco-row-justify-start arco-form-item arco-form-layout-vertical">
+                                                <div class="arco-form-label-item"><label> Password</label></div>
+                                                <div class="arco-form-item-wrapper">
+                                                    <div class="arco-form-item-control-wrapper">
+                                                        <div class="arco-form-item-control">
+                                                            <div class="arco-form-item-control-children">
+                                                                <div class="arco-input-group-wrapper arco-input-group-wrapper-default arco-input-has-suffix arco-input-password arco-input-password-visibility">
+                                                                    <span class="arco-input-group"><span
+                                                                            class="arco-input-inner-wrapper arco-input-inner-wrapper-default"><input
+                                                                            autocomplete="new-password" type="password"
+                                                                            id="Password_input" maxlength="50"
+                                                                            placeholder="Create a password"
+                                                                            class="arco-input arco-input-size-default"
+                                                                            value=""><span
+                                                                            class="arco-input-group-suffix"><svg
+                                                                            fill="none" stroke="currentColor"
+                                                                            stroke-width="4" viewBox="0 0 48 48"
+                                                                            tabindex="0"
+                                                                            class="arco-input-password-visibility-icon arco-icon arco-icon-eye-invisible"><path
+                                                                            d="M14 14.5c-2.69 2-5.415 5.33-8 9.5 5.373 8.667 11.373 13 18 13 3.325 0 6.491-1.09 9.5-3.271M17.463 12.5C19 11 21.75 11 24 11c6.627 0 12.627 4.333 18 13-1.766 2.848-3.599 5.228-5.5 7.14"></path><path
+                                                                            d="M29 24a5 5 0 1 1-10 0 5 5 0 0 1 10 0ZM6.852 7.103l34.294 34.294"></path></svg></span></span></span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div style="height: 16px;"></div>
+                                            <div class="arco-row-align-start arco-row-justify-start arco-form-item arco-form-layout-vertical">
+                                                <div class="arco-form-item-wrapper">
+                                                    <div class="arco-form-item-control-wrapper">
+                                                        <div class="arco-form-item-control" id="_read">
+                                                            <div class="arco-form-item-control-children"><label
+                                                                    id="_read_input"
+                                                                    class="arco-checkbox checkbox-YKibDc"><input
+                                                                    type="checkbox" value="">
+                                                                <div class="arco-space arco-space-horizontal arco-space-align-center"
+                                                                     style="align-items: start;">
+                                                                    <div class="arco-space-item"
+                                                                         style="margin-right: 8px;"><label
+                                                                            class="arco-checkbox"><input type="checkbox"
+                                                                                                         value=""><span
+                                                                            class="arco-icon-hover arco-checkbox-icon-hover arco-checkbox-mask-wrapper"><div
+                                                                            class="arco-checkbox-mask"><svg
+                                                                            class="arco-checkbox-mask-icon"
+                                                                            aria-hidden="true" focusable="false"
+                                                                            viewBox="0 0 1024 1024" width="200"
+                                                                            height="200" fill="currentColor"><path
+                                                                            d="M877.44815445 206.10060629a64.72691371 64.72691371 0 0 0-95.14856334 4.01306852L380.73381888 685.46812814 235.22771741 533.48933518a64.72691371 64.72691371 0 0 0-92.43003222-1.03563036l-45.82665557 45.82665443a64.72691371 64.72691371 0 0 0-0.90617629 90.61767965l239.61903446 250.10479331a64.72691371 64.72691371 0 0 0 71.19960405 15.14609778 64.33855261 64.33855261 0 0 0 35.08198741-21.23042702l36.24707186-42.71976334 40.5190474-40.77795556-3.36579926-3.49525333 411.40426297-486.74638962a64.72691371 64.72691371 0 0 0-3.88361443-87.64024149l-45.3088404-45.43829334z"
+                                                                            p-id="840"></path></svg></div></span></label>
+                                                                    </div>
+                                                                    <div class="arco-space-item">
+                                                                        <div class="checkbox-text-GOeBQm">I have read
+                                                                            and agree with the BytePlus <a
+                                                                                    href="https://docs.byteplus.com/legal/docs/customer-agreement"
+                                                                                    target="_blank"
+                                                                                    rel="noopener noreferrer">Customer
+                                                                                Agreement</a>, <a
+                                                                                    href="https://docs.byteplus.com/legal/docs/terms-of-service"
+                                                                                    target="_blank"
+                                                                                    rel="noopener noreferrer">Terms of
+                                                                                service</a> and have read the <a
+                                                                                    href="https://docs.byteplus.com/legal/docs/privacy-policy"
+                                                                                    target="_blank"
+                                                                                    rel="noopener noreferrer">Privacy
+                                                                                Policy</a>.
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </label></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="arco-row-align-start arco-row-justify-start arco-form-item arco-form-layout-vertical"
+                                                 style="margin-bottom: 40px;">
+                                                <div class="arco-form-item-wrapper">
+                                                    <div class="arco-form-item-control-wrapper">
+                                                        <div class="arco-form-item-control" id="OptIn">
+                                                            <div class="arco-form-item-control-children"><label
+                                                                    id="OptIn_input"
+                                                                    class="arco-checkbox checkbox-YKibDc"><input
+                                                                    type="checkbox" value="">
+                                                                <div class="arco-space arco-space-horizontal arco-space-align-center"
+                                                                     style="align-items: start;">
+                                                                    <div class="arco-space-item"
+                                                                         style="margin-right: 8px;"><label
+                                                                            class="arco-checkbox"><input type="checkbox"
+                                                                                                         value=""><span
+                                                                            class="arco-icon-hover arco-checkbox-icon-hover arco-checkbox-mask-wrapper"><div
+                                                                            class="arco-checkbox-mask"><svg
+                                                                            class="arco-checkbox-mask-icon"
+                                                                            aria-hidden="true" focusable="false"
+                                                                            viewBox="0 0 1024 1024" width="200"
+                                                                            height="200" fill="currentColor"><path
+                                                                            d="M877.44815445 206.10060629a64.72691371 64.72691371 0 0 0-95.14856334 4.01306852L380.73381888 685.46812814 235.22771741 533.48933518a64.72691371 64.72691371 0 0 0-92.43003222-1.03563036l-45.82665557 45.82665443a64.72691371 64.72691371 0 0 0-0.90617629 90.61767965l239.61903446 250.10479331a64.72691371 64.72691371 0 0 0 71.19960405 15.14609778 64.33855261 64.33855261 0 0 0 35.08198741-21.23042702l36.24707186-42.71976334 40.5190474-40.77795556-3.36579926-3.49525333 411.40426297-486.74638962a64.72691371 64.72691371 0 0 0-3.88361443-87.64024149l-45.3088404-45.43829334z"
+                                                                            p-id="840"></path></svg></div></span></label>
+                                                                    </div>
+                                                                    <div class="arco-space-item">
+                                                                        <div class="checkbox-text-GOeBQm">Sign me up to
+                                                                            receive updates, event information, and
+                                                                            marketing promotions from BytePlus by email.
+                                                                            I understand that I can opt-out at any time.
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </label></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="arco-row-align-start arco-row-justify-start arco-form-item arco-form-layout-vertical"
+                                                 style="margin-bottom: 0px;">
+                                                <div class="arco-form-item-wrapper">
+                                                    <div class="arco-form-item-control-wrapper">
+                                                        <div class="arco-form-item-control">
+                                                            <div class="arco-form-item-control-children">
+                                                                <div class="" style="position: relative;">
+                                                                    <button class="arco-btn arco-btn-primary arco-btn-size-large arco-btn-shape-square arco-btn-long arco-btn-disabled"
+                                                                            type="submit" disabled=""
+                                                                            style="letter-spacing: 0.2px;"><span>Verify email address</span>
+                                                                    </button>
+                                                                    <div id="pc_slide174794174156131c171e6"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="arco-row-align-start arco-row-justify-start arco-form-item arco-form-layout-vertical"
+                                                 style="margin-top: 0px;">
+                                                <div class="arco-form-item-wrapper">
+                                                    <div class="arco-form-item-control-wrapper">
+                                                        <div class="arco-form-item-control">
+                                                            <div class="arco-form-item-control-children">
+                                                                <div class="bpIdpLogin-BWDQXF ">
+                                                                    <div role="separator"
+                                                                         class="arco-divider arco-divider-horizontal arco-divider-with-text arco-divider-with-text-center divide-FVj2fu">
+                                                                        <span class="arco-divider-text arco-divider-text-center">OR</span>
+                                                                    </div>
+                                                                    <div class="idpBtnList-adjEO9">
+                                                                        <button class="arco-btn arco-btn-outline arco-btn-size-default arco-btn-shape-square googleBtn-fOQY_Y"
+                                                                                type="button">
+                                                                            <div class="arco-image"><img
+                                                                                    class="arco-image-img" tabindex="0"
+                                                                                    src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjEiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAyMSAyMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTE5LjMgMTAuMjA4NEMxOS4zIDkuNTU4MzcgMTkuMjQxNyA4LjkzMzM3IDE5LjEzMzMgOC4zMzMzN0gxMC41VjExLjg4MzRIMTUuNDMzM0MxNS4yMTY3IDEzLjAyNSAxNC41NjY3IDEzLjk5MTcgMTMuNTkxNyAxNC42NDE3VjE2Ljk1SDE2LjU2NjdDMTguMyAxNS4zNSAxOS4zIDEzIDE5LjMgMTAuMjA4NFoiIGZpbGw9IiM0Mjg1RjQiLz4KPHBhdGggZD0iTTEwLjQ5OTcgMTkuMTY2N0MxMi45NzQ3IDE5LjE2NjcgMTUuMDQ5NyAxOC4zNSAxNi41NjY0IDE2Ljk1TDEzLjU5MTQgMTQuNjQxN0MxMi43NzQ3IDE1LjE5MTcgMTEuNzMzMSAxNS41MjUgMTAuNDk5NyAxNS41MjVDOC4xMTY0MSAxNS41MjUgNi4wOTE0MSAxMy45MTY3IDUuMzY2NDEgMTEuNzVIMi4zMTY0MVYxNC4xMTY3QzMuODI0NzQgMTcuMTA4MyA2LjkxNjQxIDE5LjE2NjcgMTAuNDk5NyAxOS4xNjY3WiIgZmlsbD0iIzM0QTg1MyIvPgo8cGF0aCBkPSJNNS4zNjYzNCAxMS43NDE3QzUuMTgzMDEgMTEuMTkxNyA1LjA3NDY3IDEwLjYwODQgNS4wNzQ2NyAxMC4wMDAxQzUuMDc0NjcgOS4zOTE3MiA1LjE4MzAxIDguODA4MzkgNS4zNjYzNCA4LjI1ODM5VjUuODkxNzJIMi4zMTYzNEMxLjY5MTM0IDcuMTI1MDYgMS4zMzMwMSA4LjUxNjcyIDEuMzMzMDEgMTAuMDAwMUMxLjMzMzAxIDExLjQ4MzQgMS42OTEzNCAxMi44NzUxIDIuMzE2MzQgMTQuMTA4NEw0LjY5MTM0IDEyLjI1ODRMNS4zNjYzNCAxMS43NDE3WiIgZmlsbD0iI0ZCQkMwNSIvPgo8cGF0aCBkPSJNMTAuNDk5NyA0LjQ4MzM3QzExLjg0OTcgNC40ODMzNyAxMy4wNDk3IDQuOTUwMDQgMTQuMDA4MSA1Ljg1MDA0TDE2LjYzMzEgMy4yMjUwNEMxNS4wNDE0IDEuNzQxNzEgMTIuOTc0NyAwLjgzMzM3NCAxMC40OTk3IDAuODMzMzc0QzYuOTE2NDEgMC44MzMzNzQgMy44MjQ3NCAyLjg5MTcxIDIuMzE2NDEgNS44OTE3MUw1LjM2NjQxIDguMjU4MzdDNi4wOTE0MSA2LjA5MTcxIDguMTE2NDEgNC40ODMzNyAxMC40OTk3IDQuNDgzMzdaIiBmaWxsPSIjRUE0MzM1Ii8+Cjwvc3ZnPgo=">
+                                                                            </div>
+                                                                            <span>Continue with Google</span></button>
+                                                                        <div id="g_id_onload"
+                                                                             data-client_id="530334139994-7m4fcc1hn4t3up0puovm7ospb6imkss3.apps.googleusercontent.com"
+                                                                             data-context="signin"
+                                                                             data-ux_mode="redirect"
+                                                                             data-login_uri="https://console.byteplus.com/api/passport/login/googlePromptCallback"
+                                                                             data-itp_support="true" data-utm=""
+                                                                             data-security_token="c7aff01d-773a-45ed-808c-24244ee20bc3"></div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div style="height: 8px;"></div>
+                                            <div class="tip-EM5QFv">Already have an account?&nbsp;<a
+                                                    href="/auth/login/"><span
+                                                    style="font-weight: 500;">Sign in</span></a></div>
+                                        </form>
+                                    </section>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="privacyLinks-yj0fcO ">
+                            <svg fill="none" stroke="currentColor" stroke-width="4" viewBox="0 0 48 48"
+                                 aria-hidden="true" focusable="false" class="arco-icon arco-icon-copyright">
+                                <path d="M29.292 18a8 8 0 1 0 0 12M42 24c0 9.941-8.059 18-18 18S6 33.941 6 24 14.059 6 24 6s18 8.059 18 18Z"></path>
+                            </svg>
+                            BytePlus<span class="dot-gWswCl">●</span><a class="link-R4DJr6"
+                                                                        href="https://docs.byteplus.com/legal/docs/terms-of-service"
+                                                                        target="_blank" rel="noreferrer">Terms</a><span
+                                class="dot-gWswCl">●</span><a class="link-R4DJr6"
+                                                              href="https://docs.byteplus.com/legal/docs/privacy-policy"
+                                                              target="_blank" rel="noreferrer">Privacy</a>
+                            <button class="arco-btn arco-btn-text arco-btn-size-default arco-btn-shape-square changeLanguageBtn-swzGxP"
+                                    type="button">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_4131_98948)">
+                                        <path d="M8.13314 0.799805C12.1832 0.799805 15.4665 4.08305 15.4665 8.13314C15.4665 12.1832 12.1832 15.4665 8.13314 15.4665C4.08305 15.4665 0.799805 12.1832 0.799805 8.13314C0.799805 4.08305 4.08305 0.799805 8.13314 0.799805ZM10.1183 8.80012H6.14801C6.21668 10.3327 6.51986 11.7327 6.98994 12.7669C7.22578 13.2857 7.48886 13.6767 7.74394 13.9141C7.91863 14.0766 8.04417 14.1331 8.13314 14.1331C8.22211 14.1331 8.34765 14.0766 8.52233 13.9141C8.77742 13.6767 9.0405 13.2857 9.27634 12.7669C9.74641 11.7327 10.0496 10.3327 10.1183 8.80012ZM5.98209 13.736L5.94542 13.6662C5.31494 12.4586 4.89282 10.7381 4.8134 8.80007L2.16977 8.79994C2.4155 11.0223 3.87501 12.8789 5.87067 13.6919L5.98209 13.736ZM14.0965 8.79994L11.4529 8.80007C11.3719 10.7757 10.9348 12.5254 10.2839 13.736C12.3368 12.9475 13.8462 11.0635 14.0965 8.79994ZM10.2842 2.53024L10.3209 2.6002C10.9514 3.80783 11.3735 5.52848 11.4529 7.46654L14.0965 7.46667C13.8509 5.24414 12.3914 3.38746 10.3956 2.57434L10.2842 2.53024ZM5.98254 2.53003L5.94218 2.54574C3.90983 3.3433 2.41827 5.21768 2.16974 7.46667L4.81339 7.46654C4.89162 5.55649 5.30275 3.85761 5.91816 2.65288L5.98254 2.53003ZM8.13314 2.13314C8.04417 2.13314 7.91863 2.18965 7.74394 2.3522C7.48886 2.58957 7.22578 2.98058 6.98994 3.49943C6.51983 4.53366 6.21664 5.93378 6.148 7.46649H10.1183C10.0496 5.93378 9.74645 4.53366 9.27634 3.49943C9.0405 2.98058 8.77742 2.58957 8.52233 2.3522C8.36353 2.20443 8.24534 2.14429 8.15832 2.13458L8.13314 2.13314Z"
+                                              fill="#4D545E"></path>
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_4131_98948">
+                                            <rect width="16" height="16" fill="white"></rect>
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                                <span>English</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script crossorigin="anonymous">window.__VCONSOLE_SLARDAR && window.__VCONSOLE_SLARDAR('start', {})</script>
+<script defer="" crossorigin="anonymous"
+        src="//sf16-resources.bytepluscdn.com/obj/byteplus-public-aiso/byteplus-vendors/bp-information.9a096644.js"></script>
+<script>window.__NAVBAR_DATA__ = {REGION_HOOKS_EXPERIMENT: true}</script>
+<script src="//sf-static-resources.bytepluscdn.com/obj/byteplus-public-aiso/byteplus_console_navbar/static/js/runtime-navbar.86c3a1a1.js"
+        crossorigin="anonymous"></script>
+<script src="//sf-static-resources.bytepluscdn.com/obj/byteplus-public-aiso/byteplus_console_navbar/static/js/common.7aa54f69.js"
+        crossorigin="anonymous"></script>
+<script src="//sf-static-resources.bytepluscdn.com/obj/byteplus-public-aiso/byteplus_console_navbar/static/js/vendors-cdd60c62.e7dc9f8c.js"
+        crossorigin="anonymous"></script>
+<script src="//sf-static-resources.bytepluscdn.com/obj/byteplus-public-aiso/byteplus_console_navbar/static/js/vendors-536eaa00.aef750b8.js"
+        crossorigin="anonymous"></script>
+<script src="//sf-static-resources.bytepluscdn.com/obj/byteplus-public-aiso/byteplus_console_navbar/static/js/vendors-059be3de.5c527a13.js"
+        crossorigin="anonymous"></script>
+<script src="//sf-static-resources.bytepluscdn.com/obj/byteplus-public-aiso/byteplus_console_navbar/static/js/navbar.14a2479b.js"
+        crossorigin="anonymous"></script>
+<script defer=""
+        src="//sf-static-resources.bytepluscdn.com/obj/byteplus-public-aiso/vconsole-auth/byteplus/static/js/1.0.0.506/builder-runtime.120ccc92.js"
+        crossorigin="anonymous"></script>
+<script defer=""
+        src="//sf-static-resources.bytepluscdn.com/obj/byteplus-public-aiso/vconsole-auth/byteplus/static/js/1.0.0.506/9515.d995846e.js"
+        crossorigin="anonymous"></script>
+<script defer=""
+        src="//sf-static-resources.bytepluscdn.com/obj/byteplus-public-aiso/vconsole-auth/byteplus/static/js/1.0.0.506/main.84f9f08a.js"
+        crossorigin="anonymous"></script>
+<script defer=""
+        src="https://sf16-resources.bytepluscdn.com/obj/unpkg-va/platform-fe/byteplus-cookie-banner/0.0.5/dist/init-cookie.js"></script>
+<div>
+    <button style="display: none;">Cookie preferences</button>
+</div>
+<noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5MSRBFX"
+            style="display: none; visibility: hidden;"></iframe>
+</noscript>
+<noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WTMWF5D"
+            style="display: none; visibility: hidden;"></iframe>
+</noscript>
+<div>
+    <div class="dpsg-cookieBanner" style="display: none;">
+        <div class="dpsg-cookieSettingModal">
+            <div class="dpsg-cookieSettingModal-modalBody">
+                <div class="dpsg-cookieSettingModal-section"><h2 class="dpsg-cookieSettingModal-modalTitle">Cookie
+                    Settings</h2>
+                    <p class="dpsg-cookieSettingModal-sectionP">We use cookies for technical reasons that are strictly
+                        necessary to ensure the operation of our websites, and we refer to these as "essential" cookies.
+                        With your consent, we also use other cookies to enhance your experience on our websites and
+                        improve our services.</p>
+                    <p class="dpsg-cookieSettingModal-sectionP">Review our <a target="_blank"
+                                                                              data-link-name="cookie-policy"
+                                                                              href="https://docs.byteplus.com/legal/docs/cookie-policy">Cookie
+                        Policy</a> for more information about the cookies we use.</p></div>
+                <div class="dpsg-cookieSettingModal-section"><h2 class="dpsg-cookieSettingModal-sectionTitle">Essential
+                    Cookies</h2>
+                    <p class="dpsg-cookieSettingModal-sectionP">These cookies are strictly necessary to ensure the safe
+                        and proper functioning of our websites. For example for authentication and security purposes.
+                        You may disable these by changing your browser settings, but this may affect how the website
+                        functions.</p></div>
+                <div class="dpsg-cookieSettingModal-section"><h2 class="dpsg-cookieSettingModal-sectionTitle">
+                    Performance and Analytics Cookies</h2>
+                    <p class="dpsg-cookieSettingModal-sectionP">These cookies collect information that is used either in
+                        aggregate form to help us understand how our websites are being used and enable us to enhance
+                        the performance and improve our services.</p></div>
+                <div class="dpsg-cookieSettingModal-divider"></div>
+                <div class="dpsg-cookieSettingModal-sectionAnalytic">
+                    <div class="dpsg-cookieSettingModal-sectionHeader"><h2 class="dpsg-cookieSettingModal-sectionTitle">
+                        First-party Analytics</h2>
+                        <div class="dpsg-cookieSettingModal-analyticSwitch"
+                             style="position: relative; display: inline-block; text-align: left; opacity: 1; direction: ltr; border-radius: 3px; transition: opacity 0.25s; touch-action: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); user-select: none;">
+                            <div class="react-switch-bg"
+                                 style="height: 6px; width: 36px; margin: 7px; position: relative; background: rgb(136, 136, 136); border-radius: 3px; cursor: pointer; transition: background 0.25s;"></div>
+                            <div class="react-switch-handle"
+                                 style="height: 20px; width: 20px; background: rgb(255, 255, 255); display: inline-block; cursor: pointer; border-radius: 50%; position: absolute; transform: translateX(0px); top: 0px; outline: 0px; box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 5px; border: 0px; transition: background-color 0.25s, transform 0.25s, box-shadow 0.15s;"></div>
+                            <input type="checkbox" role="switch" aria-checked="false"
+                                   style="border: 0px; clip: rect(0px, 0px, 0px, 0px); height: 1px; margin: -1px; overflow: hidden; padding: 0px; position: absolute; width: 1px;">
+                        </div>
+                    </div>
+                    <p class="dpsg-cookieSettingModal-sectionP">Performance measurement and optimization</p></div>
+                <div class="dpsg-cookieSettingModal-sectionAnalytic">
+                    <div class="dpsg-cookieSettingModal-sectionHeader"><h2 class="dpsg-cookieSettingModal-sectionTitle">
+                        Google Analytics</h2>
+                        <div class="dpsg-cookieSettingModal-analyticSwitch"
+                             style="position: relative; display: inline-block; text-align: left; opacity: 1; direction: ltr; border-radius: 3px; transition: opacity 0.25s; touch-action: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); user-select: none;">
+                            <div class="react-switch-bg"
+                                 style="height: 6px; width: 36px; margin: 7px; position: relative; background: rgb(136, 136, 136); border-radius: 3px; cursor: pointer; transition: background 0.25s;"></div>
+                            <div class="react-switch-handle"
+                                 style="height: 20px; width: 20px; background: rgb(255, 255, 255); display: inline-block; cursor: pointer; border-radius: 50%; position: absolute; transform: translateX(0px); top: 0px; outline: 0px; box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 5px; border: 0px; transition: background-color 0.25s, transform 0.25s, box-shadow 0.15s;"></div>
+                            <input type="checkbox" role="switch" aria-checked="false"
+                                   style="border: 0px; clip: rect(0px, 0px, 0px, 0px); height: 1px; margin: -1px; overflow: hidden; padding: 0px; position: absolute; width: 1px;">
+                        </div>
+                    </div>
+                    <p class="dpsg-cookieSettingModal-sectionP">See their <a target="_blank" data-link-name="ga-policy"
+                                                                             href="https://marketingplatform.google.com/about/analytics/terms/us/">Privacy
+                        Policy</a></p></div>
+                <div class="dpsg-cookieSettingModal-sectionAnalytic">
+                    <div class="dpsg-cookieSettingModal-sectionHeader"><h2 class="dpsg-cookieSettingModal-sectionTitle">
+                        Yahoo</h2>
+                        <div class="dpsg-cookieSettingModal-analyticSwitch"
+                             style="position: relative; display: inline-block; text-align: left; opacity: 1; direction: ltr; border-radius: 3px; transition: opacity 0.25s; touch-action: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); user-select: none;">
+                            <div class="react-switch-bg"
+                                 style="height: 6px; width: 36px; margin: 7px; position: relative; background: rgb(136, 136, 136); border-radius: 3px; cursor: pointer; transition: background 0.25s;"></div>
+                            <div class="react-switch-handle"
+                                 style="height: 20px; width: 20px; background: rgb(255, 255, 255); display: inline-block; cursor: pointer; border-radius: 50%; position: absolute; transform: translateX(0px); top: 0px; outline: 0px; box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 5px; border: 0px; transition: background-color 0.25s, transform 0.25s, box-shadow 0.15s;"></div>
+                            <input type="checkbox" role="switch" aria-checked="false"
+                                   style="border: 0px; clip: rect(0px, 0px, 0px, 0px); height: 1px; margin: -1px; overflow: hidden; padding: 0px; position: absolute; width: 1px;">
+                        </div>
+                    </div>
+                    <p class="dpsg-cookieSettingModal-sectionP">See their <a target="_blank"
+                                                                             data-link-name="yahoo-policy"
+                                                                             href="https://legal.yahoo.com/ie/en/yahoo/privacy/index.html">Privacy
+                        Policy</a></p></div>
+                <div class="dpsg-cookieSettingModal-sectionAnalytic">
+                    <div class="dpsg-cookieSettingModal-sectionHeader"><h2 class="dpsg-cookieSettingModal-sectionTitle">
+                        LinkedIn</h2>
+                        <div class="dpsg-cookieSettingModal-analyticSwitch"
+                             style="position: relative; display: inline-block; text-align: left; opacity: 1; direction: ltr; border-radius: 3px; transition: opacity 0.25s; touch-action: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); user-select: none;">
+                            <div class="react-switch-bg"
+                                 style="height: 6px; width: 36px; margin: 7px; position: relative; background: rgb(136, 136, 136); border-radius: 3px; cursor: pointer; transition: background 0.25s;"></div>
+                            <div class="react-switch-handle"
+                                 style="height: 20px; width: 20px; background: rgb(255, 255, 255); display: inline-block; cursor: pointer; border-radius: 50%; position: absolute; transform: translateX(0px); top: 0px; outline: 0px; box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 5px; border: 0px; transition: background-color 0.25s, transform 0.25s, box-shadow 0.15s;"></div>
+                            <input type="checkbox" role="switch" aria-checked="false"
+                                   style="border: 0px; clip: rect(0px, 0px, 0px, 0px); height: 1px; margin: -1px; overflow: hidden; padding: 0px; position: absolute; width: 1px;">
+                        </div>
+                    </div>
+                    <p class="dpsg-cookieSettingModal-sectionP">See their <a target="_blank"
+                                                                             data-link-name="linkedin-policy"
+                                                                             href="https://www.linkedin.com/legal/privacy-policy">Privacy
+                        Policy</a></p></div>
+                <div class="dpsg-cookieSettingModal-sectionAnalytic">
+                    <div class="dpsg-cookieSettingModal-sectionHeader"><h2 class="dpsg-cookieSettingModal-sectionTitle">
+                        Salesforce</h2>
+                        <div class="dpsg-cookieSettingModal-analyticSwitch"
+                             style="position: relative; display: inline-block; text-align: left; opacity: 1; direction: ltr; border-radius: 3px; transition: opacity 0.25s; touch-action: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); user-select: none;">
+                            <div class="react-switch-bg"
+                                 style="height: 6px; width: 36px; margin: 7px; position: relative; background: rgb(136, 136, 136); border-radius: 3px; cursor: pointer; transition: background 0.25s;"></div>
+                            <div class="react-switch-handle"
+                                 style="height: 20px; width: 20px; background: rgb(255, 255, 255); display: inline-block; cursor: pointer; border-radius: 50%; position: absolute; transform: translateX(0px); top: 0px; outline: 0px; box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 5px; border: 0px; transition: background-color 0.25s, transform 0.25s, box-shadow 0.15s;"></div>
+                            <input type="checkbox" role="switch" aria-checked="false"
+                                   style="border: 0px; clip: rect(0px, 0px, 0px, 0px); height: 1px; margin: -1px; overflow: hidden; padding: 0px; position: absolute; width: 1px;">
+                        </div>
+                    </div>
+                    <p class="dpsg-cookieSettingModal-sectionP">See their <a target="_blank"
+                                                                             data-link-name="salesforce-policy"
+                                                                             href="https://help.salesforce.com/s/articleView?language=en_US&amp;type=5&amp;id=sf.pardot_basics_cookies.htm">Privacy
+                        Policy</a></p></div>
+                <div class="scrolling-offset"></div>
+            </div>
+            <div class="dpsg-cookieSettingModal-modalFooter"><span class="btn-wrapper btn-wrapper-outline"><button
+                    class="arco-btn arco-btn-outline arco-btn-size-default arco-btn-shape-square css-16vlta0"
+                    type="button"><span>Save</span></button></span><span class="btn-wrapper btn-wrapper-primary"><button
+                    class="arco-btn arco-btn-primary arco-btn-size-default arco-btn-shape-square css-16vlta0"
+                    type="button"><span>Accept all</span></button></span></div>
+        </div>
+        <div class="dpsg-cookieSettingModal-mask"></div>
+    </div>
+</div>
+<script type="text/javascript" id="" charset="">piAId = "950852";
+piCId = "";
+piHostname = "go.byteplus.com";
+(function () {
+    function b() {
+        var a = document.createElement("script");
+        a.type = "text/javascript";
+        a.src = ("https:" == document.location.protocol ? "https://" : "http://") + piHostname + "/pd.js";
+        var c = document.getElementsByTagName("script")[0];
+        c.parentNode.insertBefore(a, c)
+    }
+
+    window.attachEvent ? window.attachEvent("onload", b) : window.addEventListener("load", b, !1)
+})();</script>
+<script type="text/javascript" id="" charset="">(function () {
+    window.dataLayer.push({start: Date.now()});
+    google_tag_manager["rm"]["93173926"](23)(function () {
+        window.dataLayer.push({event: "interval.bounce"})
+    }, 1E3, 9999);
+    window.dataLayer.push({event: "send", label: "Initialise", extra: "page\x3dsignup"})
+})();</script>
+<script type="text/javascript" id=""
+        charset="">Element.prototype.matches || (Element.prototype.matches = Element.prototype.matchesSelector || Element.prototype.mozMatchesSelector || Element.prototype.msMatchesSelector || Element.prototype.oMatchesSelector || Element.prototype.webkitMatchesSelector || function (a) {
+    a = (this.document || this.ownerDocument).querySelectorAll(a);
+    for (var b = a.length; 0 <= --b && a.item(b) !== this;) ;
+    return -1 < b
+});</script>
+<script type="text/javascript" id="" charset="">(function () {
+    google_tag_manager["rm"]["93173926"](35)();
+    window.bouncehandler = function () {
+        var a, b = Date.now() - parseInt(google_tag_manager["rm"]["93173926"](36));
+        google_tag_manager["rm"]["93173926"](37) && (a = "page\x3dsignup step 1;duration\x3d" + b + ";identity\x3d;password\x3dfalse;confirm_password\x3dundefined;marketing\x3dundefined;agreement\x3dundefined");
+        google_tag_manager["rm"]["93173926"](38) && (a = "page\x3dsignup step 2;duration\x3d" + b + ";country\x3dundefined;org_name\x3dundefined;email\x3dundefined;company_size\x3dundefined;job_role\x3dundefined");
+        google_tag_manager["rm"]["93173926"](39) && (a = "page\x3dsignup step 3;duration\x3d" + b);
+        a = {
+            Label: "Bounce",
+            Extra: a,
+            Intranet: google_tag_manager["rm"]["93173926"](40),
+            Id: "",
+            Url: "https:\/\/console.byteplus.com\/auth\/signup"
+        };
+        google_tag_manager["rm"]["93173926"](41)(a)
+    };
+    window.addEventListener("beforeunload", window.bouncehandler)
+})();</script>
+<script type="text/javascript" id="" charset="">(function () {
+    google_tag_manager["rm"]["93173926"](43)();
+    window.bouncehandler = function () {
+        var a, b = Date.now() - parseInt(google_tag_manager["rm"]["93173926"](44));
+        google_tag_manager["rm"]["93173926"](45) && (a = "page\x3dsignup step 1;duration\x3d" + b + ";identity\x3d;password\x3dfalse;confirm_password\x3dundefined;marketing\x3dundefined;agreement\x3dundefined");
+        google_tag_manager["rm"]["93173926"](46) && (a = "page\x3dsignup step 2;duration\x3d" + b + ";country\x3dundefined;org_name\x3dundefined;email\x3dundefined;company_size\x3dundefined;job_role\x3dundefined");
+        google_tag_manager["rm"]["93173926"](47) && (a = "page\x3dsignup step 3;duration\x3d" + b);
+        a = {
+            Label: "Bounce",
+            Extra: a,
+            Intranet: google_tag_manager["rm"]["93173926"](48),
+            Id: "",
+            Url: "https:\/\/console.byteplus.com\/auth\/signup"
+        };
+        google_tag_manager["rm"]["93173926"](49)(a)
+    };
+    window.addEventListener("beforeunload", window.bouncehandler)
+})();</script>
+<script type="text/javascript" id="" charset="">(function () {
+    google_tag_manager["rm"]["93173926"](51)();
+    window.bouncehandler = function () {
+        var a, b = Date.now() - parseInt(google_tag_manager["rm"]["93173926"](52));
+        google_tag_manager["rm"]["93173926"](53) && (a = "page\x3dsignup step 1;duration\x3d" + b + ";identity\x3d;password\x3dfalse;confirm_password\x3dundefined;marketing\x3dundefined;agreement\x3dundefined");
+        google_tag_manager["rm"]["93173926"](54) && (a = "page\x3dsignup step 2;duration\x3d" + b + ";country\x3dundefined;org_name\x3dundefined;email\x3dundefined;company_size\x3dundefined;job_role\x3dundefined");
+        google_tag_manager["rm"]["93173926"](55) && (a = "page\x3dsignup step 3;duration\x3d" + b);
+        a = {
+            Label: "Bounce",
+            Extra: a,
+            Intranet: google_tag_manager["rm"]["93173926"](56),
+            Id: "",
+            Url: "https:\/\/console.byteplus.com\/auth\/signup"
+        };
+        google_tag_manager["rm"]["93173926"](57)(a)
+    };
+    window.addEventListener("beforeunload", window.bouncehandler)
+})();</script>
+<script type="text/javascript" id="" charset="">(function () {
+    google_tag_manager["rm"]["93173926"](59)();
+    window.bouncehandler = function () {
+        var a, b = Date.now() - parseInt(google_tag_manager["rm"]["93173926"](60));
+        google_tag_manager["rm"]["93173926"](61) && (a = "page\x3dsignup step 1;duration\x3d" + b + ";identity\x3d;password\x3dfalse;confirm_password\x3dundefined;marketing\x3dundefined;agreement\x3dundefined");
+        google_tag_manager["rm"]["93173926"](62) && (a = "page\x3dsignup step 2;duration\x3d" + b + ";country\x3dundefined;org_name\x3dundefined;email\x3dundefined;company_size\x3dundefined;job_role\x3dundefined");
+        google_tag_manager["rm"]["93173926"](63) && (a = "page\x3dsignup step 3;duration\x3d" + b);
+        a = {
+            Label: "Bounce",
+            Extra: a,
+            Intranet: google_tag_manager["rm"]["93173926"](64),
+            Id: "",
+            Url: "https:\/\/console.byteplus.com\/auth\/signup"
+        };
+        google_tag_manager["rm"]["93173926"](65)(a)
+    };
+    window.addEventListener("beforeunload", window.bouncehandler)
+})();</script>
+<script type="text/javascript" id="" charset="">(function () {
+    google_tag_manager["rm"]["93173926"](67)();
+    window.bouncehandler = function () {
+        var a, b = Date.now() - parseInt(google_tag_manager["rm"]["93173926"](68));
+        google_tag_manager["rm"]["93173926"](69) && (a = "page\x3dsignup step 1;duration\x3d" + b + ";identity\x3d;password\x3dfalse;confirm_password\x3dundefined;marketing\x3dundefined;agreement\x3dundefined");
+        google_tag_manager["rm"]["93173926"](70) && (a = "page\x3dsignup step 2;duration\x3d" + b + ";country\x3dundefined;org_name\x3dundefined;email\x3dundefined;company_size\x3dundefined;job_role\x3dundefined");
+        google_tag_manager["rm"]["93173926"](71) && (a = "page\x3dsignup step 3;duration\x3d" + b);
+        a = {
+            Label: "Bounce",
+            Extra: a,
+            Intranet: google_tag_manager["rm"]["93173926"](72),
+            Id: "",
+            Url: "https:\/\/console.byteplus.com\/auth\/signup"
+        };
+        google_tag_manager["rm"]["93173926"](73)(a)
+    };
+    window.addEventListener("beforeunload", window.bouncehandler)
+})();</script>
+<script type="text/javascript" id="" charset="">(function () {
+    google_tag_manager["rm"]["93173926"](75)();
+    window.bouncehandler = function () {
+        var a, b = Date.now() - parseInt(google_tag_manager["rm"]["93173926"](76));
+        google_tag_manager["rm"]["93173926"](77) && (a = "page\x3dsignup step 1;duration\x3d" + b + ";identity\x3d;password\x3dfalse;confirm_password\x3dundefined;marketing\x3dundefined;agreement\x3dundefined");
+        google_tag_manager["rm"]["93173926"](78) && (a = "page\x3dsignup step 2;duration\x3d" + b + ";country\x3dundefined;org_name\x3dundefined;email\x3dundefined;company_size\x3dundefined;job_role\x3dundefined");
+        google_tag_manager["rm"]["93173926"](79) && (a = "page\x3dsignup step 3;duration\x3d" + b);
+        a = {
+            Label: "Bounce",
+            Extra: a,
+            Intranet: google_tag_manager["rm"]["93173926"](80),
+            Id: "",
+            Url: "https:\/\/console.byteplus.com\/auth\/signup"
+        };
+        google_tag_manager["rm"]["93173926"](81)(a)
+    };
+    window.addEventListener("beforeunload", window.bouncehandler)
+})();</script>
+</body>
+</html>
